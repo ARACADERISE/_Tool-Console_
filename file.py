@@ -1,6 +1,3 @@
-# IMPORTING PACKAGES NEEDED FOR PROJECT
-from error import error
-
 '''
 
     Create the following:
@@ -77,6 +74,12 @@ while server == True:
     while not server_ended:
         
         users_choice = input('> ')
+        
+        def error():
+             ERROR_MESSAGE = "Oops..seems like that isn't a choice from the choices above, please try again.."
+             print('----' * 9)
+             print(ERROR_MESSAGE)
+             print('----' * 9)
         
         # This simply ask the user to stay
         def stay():
