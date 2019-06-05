@@ -3,13 +3,6 @@ from error import error
 import colorama
 from colorama import Fore, Style
 
-print(''' _     _             _  _  ______   _      _        _      
-    | |   | |           | || |(_____ \ | |    (_)      | |    
-     \ \  | | _    ____ | || | _____) )| | _   _   ___ | | _  
-      \ \ | || \  / _  )| || ||  ____/ | || \ | | /___)| || \ 
-  _____) )| | | |( (/ / | || || |      | | | || ||___ || | | |
- (______/ |_| |_| \____)|_||_||_|      |_| |_||_|(___/ |_| |_|''')
-
 '''
 
     Create the following:
@@ -55,7 +48,7 @@ users_name = input(Fore.GREEN + 'Your Name: ')
 names = {'UserName': users_name}
 
 # welcoming user to my Tool-Console    
-print(Fore.RED + 'Welcome to my Tool-Console,', names['UserName'].upper())
+print(Fore.RED + '山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒㄖㄖㄥ-匚ㄖ几丂ㄖㄥ乇,', names['UserName'].upper())
 
 
 ''' SERVER STARTS '''
