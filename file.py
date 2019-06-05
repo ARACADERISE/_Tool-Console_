@@ -47,11 +47,9 @@ users_name = input(Fore.GREEN + 'Your Name: ')
 # Storing users_name in a dictionary
 names = {'UserName': users_name}
 
-# welcoming user to my Tool-Console 
-# 山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒㄖㄖㄥ-匚ㄖ几丂ㄖㄥ乇   
+# welcoming user to my Tool-Console    
 
-print(Fore.RED + '\n🇼​ 🇪 ​🇱​ 🇨 ​🇴​ 🇲​ 🇪​  🇹 ​🇴​  🇲 ​🇾​   🇹​ 🇴​ 🇴​ 🇱  ​- 🇨 ​🇴 ​🇳 ​🇸 ​🇴 ​🇱 ​🇪 ,', names['UserName'].upper())
-
+print(Fore.RED + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', names['UserName'].upper())
 
 ''' SERVER STARTS '''
 
