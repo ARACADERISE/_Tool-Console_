@@ -1,5 +1,7 @@
-# IMPORTS
+# IMPORTING PACKAGES NEEDED FOR PROJECT
 from error import error
+import colorama
+from colorama import Fore, Style
 
 '''
 
@@ -40,13 +42,13 @@ from error import error
 '''
 
 # Getting the users name
-users_name = input('Your Name: ')
+users_name = input(Fore.GREEN + 'Your Name: ')
     
 # Storing users_name in a dictionary
 names = {'UserName': users_name}
 
 # welcoming user to my Tool-Console    
-print('Welcome to my Tool-Console,', names['UserName'].upper())
+print(Fore.RED + 'Welcome to my Tool-Console,', names['UserName'].upper())
 
 
 ''' SERVER STARTS '''
@@ -63,8 +65,8 @@ while server == True:
     
     # Asking the user to pick one of the following choices
     def choices():
-        print('\nChoose one of these choices')
-        print('1) "The Linux Choice" tools')
+        print(Fore.GREEN + '\nChoose one of these choices')
+        print(Fore.BLUE + '1) "The Linux Choice" tools')
         print('2) Tools Choice Two')
         print('3) Tools Choice Three')
         print('4) Exit Tool-Console')
@@ -76,12 +78,12 @@ while server == True:
     
     while not server_ended:
         
-        users_choice = input('> ')
+        users_choice = input(Fore.GREEN + '> ')
         
         # This simply ask the user to stay
         def stay():
             
-            print('Please type 1 to go back to main menu')
+            print(Fore.RED + 'Please type 1 to go back to main menu')
             go_back = input('> ')
             
             # Making any number above 1 invalid
@@ -93,13 +95,13 @@ while server == True:
                 
         # Making a function use() so we do not have to retype the code inside
         def use(LINK):
-            print('--' * 9)
+            print(Fore.GREEN + '--' * 9)
             print(LINK)
             print('--' * 9)
             
         # This will print "Getting.." when module targeted
         def get_():
-          print('Getting....')
+          print(Fore.RED + 'Getting....')
 
         # Making a function link() so we do not have to repeat the code inside the function both below and above  
         def link():
