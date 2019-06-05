@@ -48,7 +48,7 @@ users_name = input(Fore.GREEN + 'Your Name: ')
 names = {'UserName': users_name}
 
 # welcoming user to my Tool-Console    
-print(Fore.RED + '山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒㄖㄖㄥ-匚ㄖ几丂ㄖㄥ乇,', names['UserName'].upper())
+print(Fore.RED + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒㄖㄖㄥ-匚ㄖ几丂ㄖㄥ乇,', names['UserName'].upper())
 
 
 ''' SERVER STARTS '''
