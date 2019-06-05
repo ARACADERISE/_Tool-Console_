@@ -4,9 +4,13 @@ _____HOW TO USE_____
 Step 1: Choose one of the choices given to you
 Step 2: The choice of which you choose will give you modules
 Step 3: Choose one of the modules given to you
-Step 4: Copy the link given to you and happy hacking!
+Step 4: Copy the link given to you, go through the steps on installation, and happy hacking!
 -------
 
 NOTE:
-_Tool-Console_ is at no fault of copyrighting others work(s), it is simply just a Termux tool that is to be installed for hackers to know
+_Tool-Console_ is at no fault of copyrighting others work(s), it is 
+simply just a Termux tool that is to be installed for hackers to know
 and get top tools that is recommended for them.
+
+Thanks,
+Developer
