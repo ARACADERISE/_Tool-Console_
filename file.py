@@ -1,7 +1,10 @@
 # IMPORTING PACKAGES NEEDED FOR PROJECT
 from error import error
+from exiting import exit_server_msg
 import colorama
 from colorama import Fore, Style
+import time
+import timeout_decorator
 
 '''
 
@@ -49,7 +52,8 @@ names = {'UserName': users_name}
 
 # welcoming user to my Tool-Console    
 
-print(Fore.RED + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', names['UserName'].upper())
+print(Fore.YELLOW + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', names['UserName'].upper())
+
 
 ''' SERVER STARTS '''
 
@@ -83,7 +87,7 @@ while server == True:
         # This simply ask the user to stay
         def stay():
             
-            print(Fore.RED + 'Please type 1 to go back to main menu')
+            print('Please type 1 to go back to main menu')
             go_back = input('> ')
             
             # Making any number above 1 invalid
@@ -92,6 +96,11 @@ while server == True:
             elif go_back > '1':
                 error()
                 stay()
+
+        # Asks user to go back to main menu
+        def error_go_back():
+          print(Fore.GREEN + 'Type 1 to go back to main menu..')
+          input('> ')
                 
         # Making a function use() so we do not have to retype the code inside
         def use(LINK):
@@ -102,6 +111,7 @@ while server == True:
         # This will print "Getting.." when module targeted
         def get_():
           print(Fore.RED + 'Getting....')
+          time.sleep(3)
 
         # Making a function link() so we do not have to repeat the code inside the function both below and above  
         def link():
@@ -140,6 +150,8 @@ while server == True:
         
         # Assigning an if statement to whatever the user has chosen
         if users_choice == '1':
+            
+            # Making a function called call_ to call the modules for the users choice
             def call_():
                 print('\nNow choose one of the following 5 modules: ')
                 print('1. The Linux Choice: Shellphish')
@@ -173,12 +185,10 @@ while server == True:
                 break
             else:
                 error()
-                print('Type 1 to go back to main menu..')
-                input('> ')
+                error_go_back()
                 break
             
         elif users_choice == '2':
-            print('You chose 2\n')
             print('Now choose one of the following within this module')
             print('1. Choice one')
             print('2. Choice two')
@@ -192,9 +202,12 @@ while server == True:
                 link()
                 stay()
                 break
+            else:
+              error()
+              error_go_back()
+              break
             
         elif users_choice == '3':
-            print('You chose 3\n')
             print('Now choose one of the following within this module')
             print('1. Choice one')
             print('2. Choice two')
@@ -208,10 +221,15 @@ while server == True:
               link()
               stay()
               break
+            else:
+              error()
+              error_go_back()
+              break
             
         elif users_choice == '4':
             server = False
             server_ended = True
+            exit_server_msg()
             
         else:
             error()
