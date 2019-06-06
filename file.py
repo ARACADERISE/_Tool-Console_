@@ -169,7 +169,7 @@ while server == True:
                 print('4. The Linux Choice: Option 4')
                 print('5. The Linux Choice: Option 5')
             call_()
-            users_module_choice = input('> ')
+            users_module_choice = input(Fore.GREEN + '> ')
             
             # Checking which one the user chose within a if else statement
             if users_module_choice == '1':
