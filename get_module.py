@@ -3,7 +3,7 @@ from colorama import Fore, Style
 # This will print "Getting.." when module targeted
 def get_():
   time.sleep(1)
-  print(Fore.RED + 'Getting....')
+  print(Fore.RED + 'Fetching Information...')
   time.sleep(2)
   print('Got https')
   time.sleep(1)
