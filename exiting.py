@@ -1,7 +1,6 @@
 import colorama
 from colorama import Fore, Style
 import time
-import timeout_decorator
 # Making the "Exiting.." 
 def exit_server_msg():
   time.sleep(3)
