@@ -6,7 +6,7 @@ Here is everything you need to know:
 
 How to install:
 
-``` git https://github.com/ARACADERISE/_Tool-Console_.git ```
+``` git clone https://github.com/ARACADERISE/_Tool-Console_.git ```
 ## ##
  ```cd _Tool-Console_ ```
 ## ##
