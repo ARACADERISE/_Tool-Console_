@@ -1,5 +1,5 @@
 import time
-import colorama
+# import colorama
 from colorama import Fore, Style
 def load_():
   time.sleep(1.5)
