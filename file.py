@@ -5,6 +5,7 @@ from exiting import exit_server_msg
 from colorama import Fore, Style
 import time
 from load_file import load_
+from get_module import get_
 
 # LOADING THE FILE AT DEFAULT
 load_()
@@ -107,18 +108,13 @@ while server == True:
           print(Fore.GREEN + 'Please type 1 to go back to main menu')
           go_back = input('> ')
           time.sleep(1)
-          
+
           # Making any number above 1 invalid
           if go_back == '1':
             choices
           elif go_back > '1':
             error()
             stay()
-            
-        # This will print "Getting.." when module targeted
-        def get_():
-          print(Fore.RED + 'Getting....')
-          time.sleep(3)
 
         # Making a function link() so we do not have to repeat the code inside the function both below and above  
         def link():
@@ -133,28 +129,28 @@ while server == True:
                     use('https://github.com/thelinuxchoice/blackeye')
                 elif users_module_choice == '3':
                     get_()
-                    use('LINK HERE')
+                    use('')
                 elif users_module_choice == '4':
                     get_()
-                    use('LINK HERE 4')
+                    use('')
                 elif users_module_choice == '5':
                     get_()
-                    use('LINK HERE 5')
+                    use('')
             elif users_choice == '2':
                 if users_module_choice_two == '1':
                     get_()
-                    use('https://google.com3')
+                    use('')
                 elif users_module_choice_two == '2':
                     get_()
-                    use('https://google.com4')
+                    use('')
             elif users_choice == '3':
                 if users_module_choice_three == '1':
                     get_()
-                    use('https://google.com5')
+                    use('')
                 elif users_module_choice_three == '2':
                     get_()
-                    use('https://google.com6')
-        
+                    use('')
+
         # Assigning an if statement to whatever the user has chosen
         time.sleep(1)
         if users_choice == '1':
