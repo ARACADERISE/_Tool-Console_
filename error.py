@@ -1,7 +1,6 @@
 import colorama
 from colorama import Fore, Style
 import time
-import timeout_decorator
 # Making a function error() to print an error
 def error():
   time.sleep(2)
