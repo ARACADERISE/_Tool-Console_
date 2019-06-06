@@ -1,4 +1,4 @@
-import colorama
+# import colorama
 from colorama import Fore, Style
 import time
 # Making the "Exiting.." 
