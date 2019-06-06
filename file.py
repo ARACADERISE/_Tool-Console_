@@ -162,8 +162,8 @@ while server == True:
             
             # Making a function called call_ to call the modules for the users choice
             def call_():
-                print('\nNow choose one of the following 5 modules: ')
-                print('1. The Linux Choice: Shellphish')
+                print(Fore.GREEN + '\nNow choose one of the following 5 modules: ')
+                print(Fore.BLUE + '1. The Linux Choice: Shellphish')
                 print('2. The Linux Choice: Blackeye')
                 print('3. The Linux Choice: Option 3')
                 print('4. The Linux Choice: Option 4')
