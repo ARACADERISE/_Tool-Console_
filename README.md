@@ -26,7 +26,7 @@ How to install:
  ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py ```
  <hr/>
  
- ## ##
+</br>
  
  ```python file.py ```
  
