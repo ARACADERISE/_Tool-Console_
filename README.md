@@ -20,11 +20,11 @@ How to install:
 
  ```cd _Tool-Console_ ```
 
-</hr>
+<hr/>
  > **_NOTE: THIS IS NOT NEEDED, BUT HIGHLY ADVISED TO DO_** 
  
  ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py ```
- </hr>
+ <hr/>
  ```python file.py ```
  
  
