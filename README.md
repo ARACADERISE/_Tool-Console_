@@ -1,4 +1,4 @@
- # <h1 align="center">WELCOME TO __"Tool-Console"__</h1> #
+ # <h1 align="center">WELCOME TO __"Tool-Console"__</h1> 
  
  </br>
 <p align="center">
@@ -6,9 +6,9 @@
 </p>
 </br>
 
-### <h1 align="center">PLEASE READ THE FOLLOWING</h1> ###
+### <h1 align="center">PLEASE READ THE FOLLOWING</h1> 
 
-## ##
+
 
 Hi, thank you for choosing my Tool-Console!
 
@@ -17,15 +17,15 @@ Here is everything you need to know:
 How to install:
 
 ``` git clone https://github.com/ARACADERISE/_Tool-Console_.git ```
-## ##
+
  ```cd _Tool-Console_ ```
-## ##
+
  > **_NOTE: THIS IS NOT NEEDED, BUT HIGHLY ADVISED TO DO_** 
  
  ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py ```
- ## ##
+ 
  ```python file.py ```
- ## ##
+ 
  
  # What is this tool used for?
   - Used to help other developers find top tools that will most likely help them in the long run
