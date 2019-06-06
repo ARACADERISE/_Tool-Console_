@@ -1,4 +1,5 @@
-# WELCOME, PLEASE READ THE FOLLOWING #
+# <p>WELCOME, PLEASE READ THE FOLLOWING</p> #
+
 Hi, thank you for choosing my Tool-Console!
 
 Here is everything you need to know:
