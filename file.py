@@ -89,20 +89,6 @@ while server == True:
     while not server_ended:
         
         users_choice = input(Fore.GREEN + '> ')
-        
-        # This simply ask the user to stay
-        def stay():
-            
-            print('Please type 1 to go back to main menu')
-            go_back = input('> ')
-            time.sleep(1)
-            
-            # Making any number above 1 invalid
-            if go_back == '1':
-                choices
-            elif go_back > '1':
-                error()
-                stay()
 
         # Asks user to go back to main menu
         def error_go_back():
@@ -112,9 +98,22 @@ while server == True:
                 
         # Making a function use() so we do not have to retype the code inside
         def use(LINK):
-            print(Fore.GREEN + '--' * 9)
+            print(Fore.YELLOW + '--' * 9)
             print(LINK)
             print('--' * 9)
+        
+        # This simply ask the user to stay
+        def stay():
+          print(Fore.GREEN + 'Please type 1 to go back to main menu')
+          go_back = input('> ')
+          time.sleep(1)
+          
+          # Making any number above 1 invalid
+          if go_back == '1':
+            choices
+          elif go_back > '1':
+            error()
+            stay()
             
         # This will print "Getting.." when module targeted
         def get_():
@@ -199,9 +198,9 @@ while server == True:
             
         elif users_choice == '2':
             print('\nNow choose one of the following within this module')
-            print('1. Choice one')
+            print(Fore.BLUE + '1. Choice one')
             print('2. Choice two')
-            users_module_choice_two = input('> ')
+            users_module_choice_two = input(Fore.GREEN + '> ')
             
             if users_module_choice_two == '1':
                 link()
@@ -218,9 +217,9 @@ while server == True:
             
         elif users_choice == '3':
             print('\nNow choose one of the following within this module')
-            print('1. Choice one')
+            print(Fore.BLUE + '1. Choice one')
             print('2. Choice two')
-            users_module_choice_three = input('> ')
+            users_module_choice_three = input(Fore.GREEN + '> ')
 
             if users_module_choice_three == '1':
               link()
