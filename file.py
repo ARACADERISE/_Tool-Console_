@@ -4,7 +4,6 @@ from exiting import exit_server_msg
 import colorama
 from colorama import Fore, Style
 import time
-import timeout_decorator
 
 '''
 
