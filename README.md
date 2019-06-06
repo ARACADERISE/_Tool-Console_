@@ -28,6 +28,9 @@ How to install:
  ## ##
  
  # What is this tool used for?
-  `` SImple ``
+  - Used to help other developers find top tools that will most likely help them in the long run
+  - Help further advance other developers works to become more and more popular
+  - Help engage developers not only use Tool-Console but to use multiple other programs for there project
+  - Simply be a "handy-dandy" tool for all and any developer who installs this within there terminal(**termux**)
 
  NOTE: THIS FILE WILL BE UPDATED WHEN I HAVE TIME, FOR NOW I AM TRYING TO GET THE PROJECT GOING 
