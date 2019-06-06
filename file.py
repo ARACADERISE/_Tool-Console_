@@ -1,7 +1,7 @@
 # IMPORTING PACKAGES NEEDED FOR PROJECT
 from error import error
 from exiting import exit_server_msg
-import colorama
+# import colorama
 from colorama import Fore, Style
 import time
 from load_file import load_
