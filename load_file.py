@@ -25,5 +25,17 @@ def load_():
     # ALERTING WHO PROJECT IS MADE BY
     time.sleep(0.3)
     print(Fore.GREEN + 'ＭＡＤＥ　ＢＹ：　ＡＲＡＣＡＤＥ_ＲＩＳＥ\n')
-    time.sleep(0.4)
+    time.sleep(0.5)
     break
+
+def port_l(p):
+  time.sleep(1)
+  print('\nLoading Port ' + p + '...')
+  time.sleep(3)
+  print('Adapting port ' + p + '...')
+  time.sleep(5)
+  print('Port ' + p + ' loaded, you are now server port ' + p)
+  time.sleep(1)
+
+def _port_used_(p):
+  print(Fore.YELLOW + '\nYour port is ' + p + '\n')
