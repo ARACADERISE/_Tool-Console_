@@ -1,6 +1,6 @@
  **<h1 align="center">WELCOME</h1>  <h1 align="center">PLEASE READ THE FOLLOWING</h1>** 
  
-<img src="file:///home/chronos/u-6b1d7fad5e1d4fd38933772ab32ada6a6aeab956/MyFiles/Downloads/Screenshot%202019-06-06%20at%2010.09.11%20AM.png" width="800" height="600">
+![img](file:///home/chronos/u-6b1d7fad5e1d4fd38933772ab32ada6a6aeab956/MyFiles/Downloads/Screenshot%202019-06-06%20at%2010.09.11%20AM.png)
 
 Hi, thank you for choosing my Tool-Console!
 
