@@ -6,7 +6,7 @@
 </p>
 </br>
 
-** <h1 align="center">PLEASE READ THE FOLLOWING</h1> **
+### <h1 align="center">PLEASE READ THE FOLLOWING</h1> ###
 
 ## ##
 
@@ -26,5 +26,8 @@ How to install:
  ## ##
  ```python file.py ```
  ## ##
+ 
+ # What is this tool used for?
+  `` SImple ``
 
  NOTE: THIS FILE WILL BE UPDATED WHEN I HAVE TIME, FOR NOW I AM TRYING TO GET THE PROJECT GOING 
