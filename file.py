@@ -1,10 +1,10 @@
 # IMPORTING PACKAGES NEEDED FOR PROJECT
 from error import error
-from exiting import exit_server_msg
+from exiting import leave_port
 # import colorama
 from colorama import Fore, Style
 import time
-from load_file import load_
+from load_file import load_, port_l, _port_used_
 from get_module import get_
 
 # LOADING THE FILE AT DEFAULT
@@ -58,12 +58,24 @@ names = {'UserName': users_name}
 
 print(Fore.YELLOW + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', names['UserName'].upper())
 
+# Asking the user to start either a default server or a server of there own
+time.sleep(1)
+server_port = input(Fore.GREEN + '\nPort(default 3000): ')
+
+# Setting default port to 3000
+if server_port == '':
+  server_port = '3000'
+
+# Storing server_port into a dictionary
+port = {'Server_Port': server_port}
+
 # Making some loading time for the server to load
 time.sleep(2)
 
 
 ''' SERVER STARTS '''
 
+port_l(port['Server_Port'])
 
 ''' BREAKS ARE NEEDED IN CASE OF REPETITION '''
 
@@ -80,7 +92,8 @@ while server == True:
         print(Fore.BLUE + '1) "The Linux Choice" tools')
         print('2) Tools Choice Two')
         print('3) Tools Choice Three')
-        print('4) Exit Tool-Console')
+        print('4) My Server Port')
+        print('5) Exit Tool-Console')
     
     choices()
     
@@ -229,11 +242,16 @@ while server == True:
               error()
               error_go_back()
               break
-            
+        
         elif users_choice == '4':
+          _port_used_(port['Server_Port'])
+          stay()
+          choices()
+
+        elif users_choice == '5':
             server = False
             server_ended = True
-            exit_server_msg()
+            leave_port(port['Server_Port'])
             
         else:
             error()
