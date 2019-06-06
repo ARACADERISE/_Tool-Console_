@@ -4,6 +4,10 @@ from exiting import exit_server_msg
 import colorama
 from colorama import Fore, Style
 import time
+from load_file import load_
+
+# LOADING THE FILE AT DEFAULT
+load_()
 
 '''
 
@@ -53,6 +57,9 @@ names = {'UserName': users_name}
 
 print(Fore.YELLOW + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', names['UserName'].upper())
 
+# Making some loading time for the server to load
+time.sleep(2)
+
 
 ''' SERVER STARTS '''
 
@@ -88,6 +95,7 @@ while server == True:
             
             print('Please type 1 to go back to main menu')
             go_back = input('> ')
+            time.sleep(1)
             
             # Making any number above 1 invalid
             if go_back == '1':
@@ -100,6 +108,7 @@ while server == True:
         def error_go_back():
           print(Fore.GREEN + 'Type 1 to go back to main menu..')
           input('> ')
+          time.sleep(1)
                 
         # Making a function use() so we do not have to retype the code inside
         def use(LINK):
@@ -148,6 +157,7 @@ while server == True:
                     use('https://google.com6')
         
         # Assigning an if statement to whatever the user has chosen
+        time.sleep(1)
         if users_choice == '1':
             
             # Making a function called call_ to call the modules for the users choice
