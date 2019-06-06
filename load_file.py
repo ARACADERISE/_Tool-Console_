@@ -11,3 +11,8 @@ def load_():
   time.sleep(1)
   print('File Loaded...\n\n')
   time.sleep(1)
+
+  # ALERTING WHO PROJECT IS MADE BY
+  time.sleep(0.3)
+  print(Fore.GREEN + 'ＭＡＤＥ　ＢＹ：　ＡＲＡＣＡＤＥ_ＲＩＳＥ\n')
+  time.sleep(0.4)
