@@ -9,7 +9,7 @@ How to install:
 ## ##
  ```cd _Tool-Console_ ```
  ## ##
- ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py ```
+ ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py ```
  ## ##
  ```python file.py ```
  ## ##
