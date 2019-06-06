@@ -1,4 +1,4 @@
-# <h1 stye="text-align:center">WELCOME, PLEASE READ THE FOLLOWING</h1> #
+# <h1 style="text-align:center">WELCOME, PLEASE READ THE FOLLOWING</h1> #
 
 Hi, thank you for choosing my Tool-Console!
 
