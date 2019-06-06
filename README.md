@@ -8,7 +8,7 @@ How to install:
 ``` git https://github.com/ARACADERISE/_Tool-Console_.git ```
 ## ##
  ```cd _Tool-Console_ ```
- ### NOTE: THIS IS NOT NEEDED ###
+ ###### **NOTE: THIS IS NOT NEEDED**
  ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py ```
  ## ##
  ```python file.py ```
