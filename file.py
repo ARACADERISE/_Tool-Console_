@@ -198,7 +198,7 @@ while server == True:
                 break
             
         elif users_choice == '2':
-            print('Now choose one of the following within this module')
+            print('\nNow choose one of the following within this module')
             print('1. Choice one')
             print('2. Choice two')
             users_module_choice_two = input('> ')
@@ -217,7 +217,7 @@ while server == True:
               break
             
         elif users_choice == '3':
-            print('Now choose one of the following within this module')
+            print('\nNow choose one of the following within this module')
             print('1. Choice one')
             print('2. Choice two')
             users_module_choice_three = input('> ')
