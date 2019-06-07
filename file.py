@@ -51,21 +51,46 @@ load_()
 
 # Getting the users name
 users_name = input(Fore.GREEN + 'Your Name: ')
+users_age = int(input('Your Age: '))
     
-# Storing users_name in a dictionary
-names = {'UserName': users_name}
+# Storing users_name and users_age in a dictionary
+name = {'UserName': users_name}
+age = {'Users_Age': users_age, 'Is_Of_Age':  True} # Assigned true as default
+# Checking if user is under 12, if so stor Is_Of_Age as false
+if users_age < 12:
+  age['Is_Of_Age'] = False
+  # Re-assigning the value of false to Is under age
+  if age['Is_Of_Age'] == False:
+    age['Is_Of_Age'] = 'Is under age'
+else:
+  age['Is_Of_Age'] = True
+  # Re-assigns the value of false to true then true is re-assigned to Is of age
+  if age['Is_Of_Age']:
+    age['Is_Of_Age'] = 'Is of age'
 
 # welcoming user to my Tool-Console    
 
-print(Fore.YELLOW + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', names['UserName'].upper())
+print(Fore.YELLOW + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚 ㄖ 几 丂 ㄖ ㄥ 乇 ,', name['UserName'].upper())
 
 # Making some loading time for the server to load
 time.sleep(2)
 
+def _user_():
+  user_data = []
+  user_info = {'Dict_name': 'User_Info_Data', 'User_Name': name['UserName'], 'Users_Age': age['Users_Age'], 'Of_Age': age['Is_Of_Age']}
+  user_data.append(user_info)
+
+  for item in user_data:
+    print('\n' + '--' * 10)
+    print(Fore.YELLOW + str(item))
+    print('--' * 10 + '\n')
+
 
 ''' SERVER STARTS '''
 
+# Will load a server port AND tell the user what the program knows/has stored
 _p_load_()
+_user_()
 
 ''' BREAKS ARE NEEDED IN CASE OF REPETITION '''
 
@@ -75,6 +100,11 @@ server = True
 
 # Starting the server
 while server == True:
+
+  # AGE LIMIT ADDED
+  if users_age < 12:
+    print(Fore.RED + 'Sorry, according to user_info "Of_Age" you are not of age')
+    break
     
     # Asking the user to pick one of the following choices
     def choices():
@@ -157,7 +187,7 @@ while server == True:
         # Assigning an if statement to whatever the user has chosen
         time.sleep(1)
         if users_choice == '1':
-            
+
             # Making a function called call_ to call the modules for the users choice
             def call_():
                 print(Fore.GREEN + '\nNow choose one of the following 5 modules: ')
@@ -215,6 +245,7 @@ while server == True:
               break
             
         elif users_choice == '3':
+
             print('\nNow choose one of the following within this module')
             print(Fore.BLUE + '1. Choice one')
             print('2. Choice two')
@@ -239,10 +270,13 @@ while server == True:
             delete_port()
 
         elif users_choice == '8':
+
+          choice_data = users_choice
+
           change_port()
           stay()
           choices()
-            
+
         else:
-            error()
-            choices()
+          error()
+          choices()
