@@ -2,7 +2,7 @@
 from error import error
 # from exiting import leave_port
 # import colorama
-from colorama import Fore, Style
+from colorama import Fore, Style, Back
 import time
 from load_file import load_, _port_used_
 from get_module import get_
@@ -52,6 +52,14 @@ load_()
 # Getting the users name
 users_name = input(Fore.GREEN + 'Your Name: ')
 users_age = int(input('Your Age: '))
+
+# Making a limit to how young you can be, or is allowed to be typed in
+if users_age < 7 and users_age > 0:
+  print(Fore.WHITE + Back.YELLOW + Style.BRIGHT + 'INVALID AGE. Mild Error: Way Too Young. Try again')
+  users_age = int(input(Style.RESET_ALL + Fore.GREEN + 'Your Age: '))
+if users_age < 0:
+  print(Back.RED + Fore.WHITE + Style.BRIGHT + 'Error: Not a age, try again')
+  users_age = int(input(Style.RESET_ALL + Fore.GREEN +  'Your Age: '))
     
 # Storing users_name and users_age in a dictionary
 name = {'UserName': users_name}
@@ -99,7 +107,7 @@ _user_()
 server = True
 
 if users_age < 12:
-  print('Sorry, but according to your User_Info_Data you are ' + user_date['Of_Age'])
+  print(Fore.RED + 'Sorry, but according to your User_Info_Data you are ' + user_data['Of_Age'])
   server = False
 
 # Starting the server
