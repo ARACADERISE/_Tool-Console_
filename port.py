@@ -59,7 +59,7 @@ def _p_load_():
     print('Port ' + port['Server_Port'] + ' is ' + is_port_live['Server_Port_Is_Live'])
     time.sleep(3)
     print('\nYou will not have history in this project !')
-  elif server_port_is_live_:
+  elif server_port_is_live_ == '':
     is_port_live['Server_Port_Is_Live'] = 'Live by default'
     print('Port ' + port['Server_Port'] + ' is ' + is_port_live['Server_Port_Is_Live'])
     print('\nUsage of project will most likely be saved')
