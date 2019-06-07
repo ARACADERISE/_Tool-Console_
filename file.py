@@ -51,15 +51,20 @@ load_()
 
 # Getting the users name
 users_name = input(Fore.GREEN + 'Your Name: ')
-users_age = int(input('Your Age: '))
+users_age = int(input(Fore.GREEN + 'Your Age: '))
 
 # Making a limit to how young you can be, or is allowed to be typed in
-if users_age < 7 and users_age > 0:
-  print(Fore.WHITE + Back.YELLOW + Style.BRIGHT + 'INVALID AGE. Mild Error: Way Too Young. Try again')
+if users_age < 5 and users_age > 1:
+  print(Back.RED + Fore.WHITE + Style.BRIGHT + 'ERROR: That is way to young, please try again')
   users_age = int(input(Style.RESET_ALL + Fore.GREEN + 'Your Age: '))
-if users_age < 0:
-  print(Back.RED + Fore.WHITE + Style.BRIGHT + 'Error: Not a age, try again')
-  users_age = int(input(Style.RESET_ALL + Fore.GREEN +  'Your Age: '))
+elif users_age < 0:
+  print(Fore.WHITE + Back.RED + 'Error: That is not even an age, try agin')
+  users_age = int(input(Style.RESET_ALL + Fore.GREEN + 'Your Age: '))
+
+# Knowing that the user won't be able to get in unless they are older then 12 we will just let it go
+if users_age <= 5:
+  print('Fine..we will accept the age of', users_age, '..why not!')
+
     
 # Storing users_name and users_age in a dictionary
 name = {'UserName': users_name}
@@ -69,7 +74,7 @@ if users_age < 12:
   age['Is_Of_Age'] = False
   # Re-assigning the value of false to Is under age
   if age['Is_Of_Age'] == False:
-    age['Is_Of_Age'] = 'Under AGe'
+    age['Is_Of_Age'] = 'Under Age'
 else:
   age['Is_Of_Age'] = True
   # Re-assigns the value of false to true then true is re-assigned to Is of age
@@ -83,32 +88,32 @@ print(Fore.YELLOW + '\n山乇ㄥ匚ㄖ爪乇 ㄒㄖ 爪ㄚ ㄒ ㄖ ㄖ ㄥ - 匚
 # Making some loading time for the server to load
 time.sleep(2)
 
-def _user_():
-  user_data = []
-  user_info = {'Dict_name': 'User_Info_Data', 'User_Name': name['UserName'], 'Users_Age': age['Users_Age'], 'Of_Age': age['Is_Of_Age']}
-  user_data.append(user_info)
-
-  for item in user_data:
-    print('\n' + '--' * 10)
-    print(Fore.YELLOW + str(item))
-    print('--' * 10 + '\n')
-
 
 ''' SERVER STARTS '''
-
-# Will load a server port AND tell the user what the program knows/has stored
-_p_load_()
-_user_()
-
-''' BREAKS ARE NEEDED IN CASE OF REPETITION '''
-
 
 # Giving the server a value of true
 server = True
 
+# Will load a server port AND tell the user what the program knows/has stored
+_p_load_()
+
+# Storing user data
+user_data = []
+user_info = {'Dict_name': 'User_Info_Data', 'User_Name': name['UserName'], 'Users_Age': age['Users_Age'], 'Of_Age': age['Is_Of_Age']}
+user_data.append(user_info)
+
+for item in user_data:
+  print('\n' + '--' * 10)
+  print('Data stored about ' + user_info['User_Name'] + '\n')
+  print(Fore.YELLOW + str(item))
+  print('--' * 10 + '\n')
+
 if users_age < 12:
-  print(Fore.RED + 'Sorry, but according to your User_Info_Data you are ' + user_data['Of_Age'])
+  print(Fore.RED + 'Sorry, but according to your User_Info_Data you are ' + user_info['Of_Age'])
   server = False
+
+''' BREAKS ARE NEEDED IN CASE OF REPETITION '''
+
 
 # Starting the server
 while server == True:
