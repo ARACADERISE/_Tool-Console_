@@ -33,7 +33,7 @@ def _p_load_():
   time.sleep(1)
   server_port = input(Fore.GREEN + '\nPort(default 3000): ')
   time.sleep(2.4)
-  print(Fore.WHITE + '\nLive Port: The port being live means that everything you do can be tracked. If you chose "Y" then the possibility of your usage being tracked is above 80%, but it is for a good use. If you chose "n" then your usage will not be tracked. \nNOTE: After you have declared your port, and thereafter declarewhether or not it is live or not, when you decide to leave it will automatically be deleted and not re-stated.')
+  print(Fore.WHITE + '\nLive Port: The port being live means that everything you do can be tracked. If you chose "Y" then the possibility of your usage being tracked is above 80%, but it is for a good use. If you chose "n" then your usage will not be tracked. \n NOTE: After you have declared your port and thereafter decide whether or not it is live you will not be able to pull up any information about it')
 
   # Setting default port to 3000
   if server_port == '':
@@ -65,6 +65,27 @@ def _p_load_():
     print('\nUsage of project will most likely be saved')
 
   port_l(port['Server_Port'])
+
+  port_data = []
+  port_info = {'Is_New': False, 'Dict_Name': 'Port_Data_Info', 'Type': 'basic', 'Port_ID': server_port, 'Is_Live': is_port_live['Server_Port_Is_Live'], 'Data_Saved': True} # Set true by default
+
+  # Checking whether or not Data_Saved is true or fals
+  if port_info['Is_Live'] == False:
+    port_info['Data_Saved'] == False
+    if port_info['Data_Saved'] == False:
+      port_info['Data_Saved'] = 'Data Not Saved'
+  else:
+    port_info['Data_Saved'] = True
+    if port_info['Data_Saved'] == True:
+      port_info['Data_Saved'] = 'Data Will Be Saved'
+  port_data.append(port_info)
+
+  for item in port_data:
+    print(Fore.YELLOW + '\n' + '--' * 10)
+    print('Data stored about your server port')
+    print(item)
+    print('--' * 10)
+
 
 # Deletes previous port if user decides to make a new port
 def delete_():
