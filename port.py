@@ -75,10 +75,7 @@ def _p_load_():
     if port_info['Data_Saved'] == False:
       port_info['Data_Saved'] = 'Data Not Saved'
   else:
-    port_info['Data_Saved'] = True
-    if port_info['Data_Saved'] == True:
-      port_info['Data_Saved'] = 'Data Will Be Saved'
-  port_data.append(port_info)
+    port_info['Data_Saved'] = 'Data Will Be Saved'
 
   for item in port_data:
     print(Fore.YELLOW + '\n' + '--' * 10)
