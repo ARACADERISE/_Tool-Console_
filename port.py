@@ -105,6 +105,8 @@ def change_port():
       time.sleep(1.5)
       print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
       print('\nUsage of project will most likely be saved')
+      port_l(new_port_['New_Port'])
+      print('---' * 8)
       break
 
     elif new_port_live == 'N' or new_port_live == 'n':
@@ -112,6 +114,8 @@ def change_port():
       time.sleep(1.5)
       print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
       print('\nYou will not have history in this project !')
+      port_l(new_port_['New_Port'])
+      print('---' * 8)
       break
 
     elif new_port_live == '':
@@ -119,7 +123,6 @@ def change_port():
       time.sleep(1.5)
       print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
       print('\nUsage of project will most likely be saved')
+      port_l(new_port_['New_Port'])
+      print('---' * 8)
       break
-    
-    port_l(new_port_['New_Port'])
-    print('---' * 8)
