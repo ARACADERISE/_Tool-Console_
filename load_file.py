@@ -35,7 +35,8 @@ def port_l(p):
   print('Adapting port ' + p + '...')
   time.sleep(5)
   print('Port ' + p + ' loaded, you are now server port ' + p)
-  time.sleep(1)
+  time.sleep(3)
 
+# CORRUPT, NOT USED
 def _port_used_(p):
   print(Fore.YELLOW + '\nYour port is ' + p + '\n')
