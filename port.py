@@ -4,7 +4,7 @@ from colorama import Fore, Style
 from exiting import leave_port
 from error import error
 
-# Just helps know when to exit, or start a new server, no use really, might help in the long run though
+# Helps us alternate between original server and new server
 server_is_running = True
 new_server_is_running = False
 
@@ -63,6 +63,14 @@ def _p_load_():
     is_port_live['Server_Port_Is_Live'] = 'Live by default'
     print('Port ' + port['Server_Port'] + ' is ' + is_port_live['Server_Port_Is_Live'])
     print('\nUsage of project will most likely be saved')
+  else:
+    error()
+    server_port_is_live = input(Fore.GREEN + '\nDo You Want Port ' + port['Server_Port'] + ' To Be Live (yes by default)[Y/n]: ')
+    if server_port_is_live == 'Y' or server_port_is_live == 'n':
+      print(Fore.RED + 'Cannot follow through with change..sorry')
+    else:
+      print(Fore.RED + 'Cannot follow through with change..sorry')
+    time.sleep(2)
 
   port_l(port['Server_Port'])
 
@@ -70,23 +78,29 @@ def _p_load_():
   port_info = {'Is_New': False, 'Dict_Name': 'Port_Data_Info', 'Type': 'basic', 'Port_ID': server_port, 'Is_Live': is_port_live['Server_Port_Is_Live'], 'Data_Saved': True} # Set true by default
 
   # Checking whether or not Data_Saved is true or fals
-  if port_info['Is_Live'] == False:
-    port_info['Data_Saved'] == False
-    if port_info['Data_Saved'] == False:
-      port_info['Data_Saved'] = 'Data Not Saved'
-  if port_info['Is_Live'] == True:
+  if port_info['Is_Live'] == 'Live':
     port_info['Data_Saved'] = True
     if port_info['Data_Saved']:
-      port_info['Data_Saved'] = 'Data will be saved'
+      port_info['Data_Saved'] = 'Data Is Being Stored/Kept'
+  elif port_info['Is_Live'] == 'Not Live':
+    port_info['Data_Saved'] = False
+    if port_info['Data_Saved'] == False:
+      port_info['Data_Saved'] = 'Data Is Not Being Stored/Kept'
+  elif port_info['Is_Live'] == 'Live by default':
+    port_info['Data_Saved'] = True
+    if port_info['Data_Saved']:
+      port_info['Data_Saved'] = 'Data Is Being Stored/Kept By Default'
+  # If for some reason the code doesn't execute correctly, this else statement will make the Data_Saved value UNKNOWN
+  else:
+    port_info['Data_Saved'] = 'UNKNOWN'
 
-  port_data.append(port_info)
-  
+  # PRINTING PORT INFORMATION  
+  port_data.append(port_info)  
   for item in port_data:
     print(Fore.YELLOW + '\n' + '--' * 10)
-    print('Data stored about your server port')
+    print('Data stored about your server port\n')
     print(item)
     print('--' * 10)
-
 
 # Deletes previous port if user decides to make a new port
 def delete_():
@@ -101,50 +115,69 @@ def delete_():
 # Making a function so the user can change there port anytime
 def change_port():
 
+  # Changing value of new_server_is_running to true for the fact that the user is about to make a new server
   server_is_running = False
   new_server_is_running = True
 
-  # Running this as a loop for the fact the the server_is_running has been declared as false
-  while new_server_is_running and not server_is_running:
-    delete_()
+  delete_()
 
-    time.sleep(3)
-    print('\n' + Fore.GREEN + '---' * 8)
-    new_port = input('New Port(default 3000): ')
-    time.sleep(4)
+  time.sleep(3)
+  print('\n' + Fore.GREEN + '---' * 8)
+  new_port = input('New Port(default 3000): ')
+  time.sleep(4)
 
-    if new_port == '':
-      new_port = '3000'
+  if new_port == '':
+    new_port = '3000'
     
-    new_port_ = {'New_Port': new_port}
+  new_port_ = {'New_Port': new_port}
 
-    new_port_live = input('Do you want the new port to be live(yes by default)[Y/n]: ')
+  new_port_live = input('Do you want the new port to be live(yes by default)[Y/n]: ')
 
-    port_live = {'Is_New_Port_Live': new_port_live}
+  port_live = {'Is_New_Port_Live': new_port_live}
 
-    if new_port_live == 'Y' or new_port_live == 'y':
-      port_live['Is_New_Port_Live'] = 'Live'
-      time.sleep(1.5)
-      print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
-      print('\nUsage of project will most likely be saved')
-      port_l(new_port_['New_Port'])
-      print('---' * 8)
-      break
+  if new_port_live == 'Y' or new_port_live == 'y':
+    port_live['Is_New_Port_Live'] = 'Live'
+    time.sleep(1.5)
+    print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
+    print('\nUsage of project will most likely be saved')
+    port_l(new_port_['New_Port'])
+    print('---' * 8)
 
-    elif new_port_live == 'N' or new_port_live == 'n':
-      port_live['Is_New_Port_Live'] = 'Not Live'
-      time.sleep(1.5)
-      print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
-      print('\nYou will not have history in this project !')
-      port_l(new_port_['New_Port'])
-      print('---' * 8)
-      break
+  elif new_port_live == 'N' or new_port_live == 'n':
+    port_live['Is_New_Port_Live'] = 'Not Live'
+    time.sleep(1.5)
+    print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
+    print('\nYou will not have history in this project !')
+    port_l(new_port_['New_Port'])
+    print('---' * 8)
 
-    elif new_port_live == '':
-      port_live['Is_New_Port_Live'] = 'Live By Default'
-      time.sleep(1.5)
-      print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
-      print('\nUsage of project will most likely be saved')
-      port_l(new_port_['New_Port'])
-      print('---' * 8)
-      break
+  elif new_port_live == '':
+    port_live['Is_New_Port_Live'] = 'Live By Default'
+    time.sleep(1.5)
+    print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
+    print('\nUsage of project will most likely be saved')
+    port_l(new_port_['New_Port'])
+    print('---' * 8)
+
+  new_port = []
+  new_port_data = {'Is_New': True, 'Dict_Name': 'New_Port_Info', 'Type': 'basic', 'Port_ID': new_port_['New_Port'], 'Is_Live': port_live['Is_New_Port_Live'], 'Data_Saved': True} # True by default
+
+  if new_port_data['Is_Live'] == 'Live':
+    new_port_data['Data_Saved'] = True
+    if new_port_data['Data_Saved']:
+      new_port_data['Data_Saved'] = 'Data Is Being Stored/Kept'
+  elif new_port_data['Is_Live'] == 'Not Live':
+    new_port_data['Data_Saved'] = False
+    if new_port_data['Data_Saved'] == False:
+      new_port_data['Data_Saved'] = 'Data Is Not Being Stored/Kept'
+  elif new_port_data['Is_Live'] == 'Live by default':
+    new_port_data['Data_Saved'] = True
+    if new_port_data['Data_Saved']:
+      new_port_data['Data_Saved'] = 'Data Is Being Stored/Kept By Default'
+  
+  new_port.append(new_port_data)
+  for item in new_port:
+    print(Fore.YELLOW + '\n' + '--' * 10)
+    print('New Data about your server port')
+    print(item)
+    print('--' * 10)
