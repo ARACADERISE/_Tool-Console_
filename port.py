@@ -74,9 +74,13 @@ def _p_load_():
     port_info['Data_Saved'] == False
     if port_info['Data_Saved'] == False:
       port_info['Data_Saved'] = 'Data Not Saved'
-  else:
-    port_info['Data_Saved'] = 'Data Will Be Saved'
+  if port_info['Is_Live'] == True:
+    port_info['Data_Saved'] = True
+    if port_info['Data_Saved']:
+      port_info['Data_Saved'] = 'Data will be saved'
 
+  port_data.append(port_info)
+  
   for item in port_data:
     print(Fore.YELLOW + '\n' + '--' * 10)
     print('Data stored about your server port')
