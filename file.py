@@ -61,7 +61,7 @@ if users_age < 12:
   age['Is_Of_Age'] = False
   # Re-assigning the value of false to Is under age
   if age['Is_Of_Age'] == False:
-    age['Is_Of_Age'] = 'Is under age'
+    age['Is_Of_Age'] = 'Under AGe'
 else:
   age['Is_Of_Age'] = True
   # Re-assigns the value of false to true then true is re-assigned to Is of age
@@ -98,13 +98,12 @@ _user_()
 # Giving the server a value of true
 server = True
 
+if users_age < 12:
+  print('Sorry, but according to your User_Info_Data you are ' + user_date['Of_Age'])
+  server = False
+
 # Starting the server
 while server == True:
-
-  # AGE LIMIT ADDED
-  if users_age < 12:
-    print(Fore.RED + 'Sorry, according to user_info "Of_Age" you are not of age')
-    break
     
     # Asking the user to pick one of the following choices
     def choices():
