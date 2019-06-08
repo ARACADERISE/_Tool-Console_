@@ -7,6 +7,7 @@ import time
 from load_file import load_, _port_used_
 from get_module import get_
 from port import _p_load_, change_port, delete_port
+from user_config import _send_
 
 # LOADING THE FILE AT DEFAULT
 load_()
@@ -125,6 +126,7 @@ while server == True:
         print('2) Tools Choice Two')
         print('3) Tools Choice Three')
         print('4) Exit Tool-Console')
+        print('5) What does the program know about me')
         print('8) Change My Server Port')
     
     choices()
@@ -280,6 +282,11 @@ while server == True:
             server = False
             server_ended = True
             delete_port()
+        
+        elif users_choice == '5':
+          _send_(user_data)
+          stay()
+          choices()
 
         elif users_choice == '8':
 
