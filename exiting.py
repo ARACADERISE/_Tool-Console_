@@ -9,6 +9,8 @@ def leave_port():
   time.sleep(2)
   print('     Server port ended..')
   time.sleep(3)
+  print('       Dumping Server Port Info...')
+  time.sleep(9)
   print('       Exiting..')
   time.sleep(1)
   print(Fore.WHITE + '         ᑢ ᓍ ᘻ ᘿ  ᗷᗩᑢᖽᐸ  ᗩ ᘜ ᗩ ᓰ ᘉ  !')
