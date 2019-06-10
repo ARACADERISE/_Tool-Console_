@@ -1,0 +1,69 @@
+{
+  "about": {
+    "author_of_project": "ARACADE_RISE",
+    "description": "Use this project to get tools from other developers",
+    "version": "1.0.1"
+  },
+  "code": [
+    "PYTHON",
+    "JSON",
+    "BINARY"
+  ],
+  "DATABASE": {
+    "database_name": "user_data",
+    "type": "data_storage",
+    "memory": null,
+    "packages": null,
+    "access_to": "project_user",
+    "file_storage": {
+      "files": [
+        "main.py",
+        "config.py",
+        "error.py",
+        "exiting.py",
+        "get_module.py",
+        "load_file.py",
+        "packages.py",
+        "port.py",
+        "program.json",
+        "generated_files", [
+          "about.json.txt",
+          "mydata.json.txt",
+          "serverdata.json.txt",
+          "new_server.json.txt",
+          "new_data.json.txt",
+          "time_info.json.txt",
+          "BUFFER.json.txt"
+        ]
+      ]
+    }
+  },
+  "json_user_info": null,
+  "user_info_found_@": "mydata.json.txt",
+  "port_info_found_@": "serverdata.json.txt",
+  "extra_info_found_@": "about.json.txt",
+
+  "ran_on": "Python 3",
+  "ran_on_platform": "repl.it",
+  "platform_project_url": "https://Termux-Project.coder4.repl.run",
+  "download_link": "https://github.com/ARACADERISE/_Tool-Console_.git",
+  "project_stored_on": "repl.it AND github.com",
+  "root": null,
+  "secured": true,
+
+  "file_tpyes": [".py", ".json.txt", ".json"],
+  "database_data_limits": ["knowing ip_address", "knowing user_device"],
+  
+  "developers_right_to_store_information": [
+    "Stored for purpose of helping project _Tool-Console_ develop & become better in everyway"
+  ],
+
+  "for": "termux",
+  "terminal_type": "ran_as_root::ran_as_termux::normal",
+  "tools": "any",
+  "additional": null,
+
+  "values": {"value_desc":[]}, 
+
+  "updates": []
+}
