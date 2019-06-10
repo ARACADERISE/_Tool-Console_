@@ -4,10 +4,20 @@ from error import error
 # import colorama
 from colorama import Fore, Style, Back
 import time
-from load_file import load_, _port_used_
+from load_file import load_
 from get_module import get_
 from port import _p_load_, change_port, delete_port
-from user_config import _send_
+from config import _send_, _timing_
+import datetime
+
+# START TIME
+_t_ = []
+_b_ = datetime.datetime.now()
+before_ = _b_.strftime("%Y-%m-%d %H:%M")
+_t_.append(before_)
+
+# Setting the program is running to true so the program can..well..run
+program_is_running = True
 
 # LOADING THE FILE AT DEFAULT
 load_()
@@ -52,7 +62,7 @@ load_()
 
 # Getting the users name
 users_name = input(Fore.GREEN + 'Your Name: ')
-users_age = int(input(Fore.GREEN + 'Your Age: '))
+users_age = int(input(Fore.GREEN + 'Your Age: '))  
 
 # Making a limit to how young you can be, or is allowed to be typed in
 if users_age < 5 and users_age > 1:
@@ -63,13 +73,15 @@ elif users_age < 0:
   users_age = int(input(Style.RESET_ALL + Fore.GREEN + 'Your Age: '))
 
 # Knowing that the user won't be able to get in unless they are older then 12 we will just let it go
-if users_age <= 5:
+if users_age < 5:
   print('Fine..we will accept the age of', users_age, '..why not!')
 
     
 # Storing users_name and users_age in a dictionary
 name = {'UserName': users_name}
-age = {'Users_Age': users_age, 'Is_Of_Age':  True} # Assigned true as default
+
+age = {'Users_Age': str(users_age), 'Is_Of_Age':  True} # Assigned true as default
+
 # Checking if user is under 12, if so stor Is_Of_Age as false
 if users_age < 12:
   age['Is_Of_Age'] = False
@@ -96,15 +108,18 @@ time.sleep(2)
 server = True
 
 # Will load a server port AND tell the user what the program knows/has stored
-_p_load_()
+_p_load_(name['UserName'], age['Users_Age'])
 
 # Storing user data
 user_data = []
 user_info = {'Dict_name': 'User_Info_Data', 'User_Name': name['UserName'], 'Users_Age': age['Users_Age'], 'Of_Age': age['Is_Of_Age']}
+
 user_data.append(user_info)
 
+_send_(user_data)
+
 for item in user_data:
-  print('\n' + '--' * 10)
+  print(Style.NORMAL + '\n' + '--' * 10)
   print('Data stored about ' + user_info['User_Name'] + '\n')
   print(Fore.YELLOW + str(item))
   print('--' * 10 + '\n')
@@ -117,7 +132,7 @@ if users_age < 12:
 
 
 # Starting the server
-while server == True:
+while server == True and program_is_running:
     
     # Asking the user to pick one of the following choices
     def choices():
@@ -126,7 +141,6 @@ while server == True:
         print('2) Tools Choice Two')
         print('3) Tools Choice Three')
         print('4) Exit Tool-Console')
-        print('5) What does the program know about me')
         print('8) Change My Server Port')
     
     choices()
@@ -284,18 +298,35 @@ while server == True:
             delete_port()
         
         elif users_choice == '5':
-          _send_(user_data)
+          time.sleep(6.5)
+          print(Fore.RED + 'Gathering information...')
+          time.sleep(10)
+          print('Getting File...')
+          time.sleep(5)
+          print('Executing Information..')
+          time.sleep(7.8)
+          print('Sorry, execution failed')
+
           stay()
           choices()
 
         elif users_choice == '8':
-
-          choice_data = users_choice
-
-          change_port()
+          time.sleep(2)
+          print(Fore.RED + 'NOTE: Once this transaction is done, previous information will be uploaded to there files')
+          time.sleep(1.5)
+          _send_(user_data)
+          change_port(name['UserName'], age['Users_Age'])
+          print(Style.NORMAL)
           stay()
           choices()
 
         else:
           error()
           choices()
+
+# END TIME
+__t__ = []
+_a_ = datetime.datetime.now()
+_after_ = _a_.strftime("%Y-%m-%d %H:%M")
+__t__.append(_after_)
+_timing_(_t_, __t__)
