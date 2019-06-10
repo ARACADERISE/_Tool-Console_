@@ -2,6 +2,7 @@
  
  </br>
 <p align="center">
+ (THIS IS NOT AN UPDATED VERSION OF WHAT THE PROJECT LOOKS LIKE, THE PICTURE WILL UPDATE WITH THE OFFICIAL RELEASE OF PROJECT)
 <img height="650" width="950" src="https://github.com/ARACADERISE/_Tool-Console_/blob/master/Screenshot%202019-06-07%20at%204.46.37%20PM.png?raw=true">
 </p>
 </br>
@@ -23,7 +24,7 @@ How to install:
 ## ##
  > **_NOTE: THIS IS NOT NEEDED, BUT HIGHLY ADVISED TO DO_** 
  
- ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py && chmod +x load_module.py ```
+ ``` chmod +x error.py && chmod +x file.py  && chmod +x exiting.py && chmod +x load_file.py && chmod +x load_module.py && chmod+x config.py ```
 ## ##
  
 </br>
