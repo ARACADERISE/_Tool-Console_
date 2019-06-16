@@ -9,7 +9,6 @@ def load_():
 
   while loading_file:
     time.sleep(2)
-    print('hey')
     print(Fore.MAGENTA + 'Loading Project _Tool-Console_...')
     time.sleep(3.5)
     print('  Getting Project Details...')
