@@ -3,11 +3,12 @@ import time
 from colorama import Fore, Style
 from exiting import leave_port
 from error import error
-from config import _server_, _data_info_, _new_server_, _new_data_info
+from config import _server_, _data_info_, _new_server_, _new_data_info, _con_, _impo_, _s_
 from packages import pkg_1, pkg_2, def_pkg
+from db import DATABASE
 
 # Helps us alternate between original server and new server
-server_is_running = True
+server_is_running = False
 new_server_is_running = False
 
 def delete_port():
@@ -31,10 +32,12 @@ def delete_port():
 # Loading a port for the project
 def _p_load_(_name_, _age_):
 
+  server_is_running = False
+  new_server_is_running = True
+
   # This is where extra information about server port will be stored
   _additional_ = []
   port_info_upd = {}
-
 
   # Asking the user to start either a default server or a server of there own
   time.sleep(1)
@@ -48,30 +51,33 @@ def _p_load_(_name_, _age_):
   # Storing server_port into a dictionary
   port = {'Server_Port': server_port}
 
+  _con_()
+  _impo_(server_is_running, new_server_is_running)
+
   # EXPLINATION OF LIVE OR NOT LIVE SERVER
   print(Style.RESET_ALL + Fore.WHITE + '\nLive Port: A live port being live means that there is a 80% chance that someone could link there root to it and use it for any need they want. A Not Live server port is a secured port that NO ONE can get to or use but you at that given time \n\n NOTE: Your user info AND port info is stored in a file after the project is done executing, just heads up in case you might want to see what the program knows about you.')
 
   # Setting the server to Live or Not Live
   server_port_is_live_ = input(Fore.GREEN + '\nDo You Want Port ' + port['Server_Port'] + ' To Be Live (yes by default)[Y/n]: ')
   time.sleep(2)
-    
+      
   # Storing server_port_is_live_ into a dictionary
   is_port_live = {'Server_Port_Is_Live': server_port_is_live_}
-    
+      
   # Checking if the server is live
   if server_port_is_live_ == 'y' or server_port_is_live_ == 'Y':
     is_port_live['Server_Port_Is_Live'] = 'Live'
     print('Port ' + port['Server_Port'] + ' is ' + is_port_live['Server_Port_Is_Live'])
-    print('\nUsage of project will most likely be saved')
+    print('\nPort Is Marked As Public, No Worries Though!')
   elif server_port_is_live_ == 'n' or server_port_is_live_ == 'N':
     is_port_live['Server_Port_Is_Live'] = 'Not Live'
     print('Port ' + port['Server_Port'] + ' is ' + is_port_live['Server_Port_Is_Live'])
     time.sleep(3)
-    print('\nYou will not have history in this project !')
+    print('\nPort Marked As Secured! All Set')
   elif server_port_is_live_ == '':
     is_port_live['Server_Port_Is_Live'] = 'Live by default'
     print('Port ' + port['Server_Port'] + ' is ' + is_port_live['Server_Port_Is_Live'])
-    print('\nUsage of project will most likely be saved')
+    print('\nPort Is Marked As Public(by default), No Worries Though!')
   else:
     error()
     server_port_is_live = input(Fore.GREEN + '\nDo You Want Port ' + port['Server_Port'] + ' To Be Live (yes by default)[Y/n]: ')
@@ -79,7 +85,7 @@ def _p_load_(_name_, _age_):
       print(Fore.RED + 'Cannot follow through with change..sorry')
     else:
       print(Fore.RED + 'Cannot follow through with change..sorry')
-    time.sleep(2)
+      time.sleep(2)
 
   port_l(port['Server_Port'], is_port_live['Server_Port_Is_Live'])
 
@@ -92,7 +98,7 @@ def _p_load_(_name_, _age_):
     print('1) Keep Port At Default Of Everything')
     print('2) Let Server Port Know Your Name')
     print('3) Let Server Port Know Your Name AND Age')
-  
+    
   _ch_()
   port_choice = input(Fore.GREEN + '> ')
 
@@ -113,7 +119,6 @@ def _p_load_(_name_, _age_):
     _additional_.append(pkg_2())
   else:
     print(Fore.RED + 'THERE WAS A ERROR' + Fore.GREEN)
-    _ch_()
 
   # Checking whether or not Port_Security is true or False
   if port_info['Is_Live'] == 'Live':
@@ -141,13 +146,15 @@ def _p_load_(_name_, _age_):
     _additional_.remove(None)
 
   # If port_info_upd['Name'] has a value of None we change it to a string
-  if port_info_upd['Name'] == [None]:
+  if port_info_upd['Name'] == [None] or port_info_upd['Name'] == '':
     port_info_upd['Name'] = 'User did not give port a name'
 
   # This will be stored in a file that the user can access after the project is done running
   _server_(port_data, port_info_upd['Name'], _additional_)
   _data_info_(port['Server_Port'], port_info['Is_New'], port_info_upd['Name'])
-  
+
+  DATABASE(port_info['Port_ID'], port_data)
+    
   for item in port_data:
     print(Fore.YELLOW + Style.NORMAL + '\n' + '--' * 10)
     print('Data stored about your server port\n')
@@ -168,12 +175,11 @@ def delete_():
 # Making a function so the user can change there port anytime
 def change_port(__name__, __age__):
 
-  _new_additional_ = []
-  new_info_upd = {}
-
-  # Changing value of new_server_is_running to true for the fact that the user is about to make a new server
   server_is_running = False
   new_server_is_running = True
+
+  _new_additional_ = []
+  new_info_upd = {}
 
   delete_()
 
@@ -184,8 +190,13 @@ def change_port(__name__, __age__):
 
   if new_port == '':
     new_port = '3000'
-    
+      
   new_port_ = {'New_Port': new_port}
+
+  _s_()
+
+  # _con_()
+  # _impo_(server_is_running, new_server_is_running)
 
   new_port_live = input('Do you want the new port to be live(yes by default)[Y/n]: ')
 
@@ -195,19 +206,19 @@ def change_port(__name__, __age__):
     port_live['Is_New_Port_Live'] = 'Live'
     time.sleep(1.5)
     print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
-    print('\nUsage of project will most likely be saved')
+    print('\nPort Is Markes As Public, No Worries Though')
 
   elif new_port_live == 'N' or new_port_live == 'n':
     port_live['Is_New_Port_Live'] = 'Not Live'
     time.sleep(1.5)
     print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
-    print('\nYou will not have history in this project !')
+    print('\nPort Marked As Secured! All Set')
 
   elif new_port_live == '':
     port_live['Is_New_Port_Live'] = 'Live By Default'
     time.sleep(1.5)
     print('New port ' + new_port_['New_Port'] + ' is ' + port_live['Is_New_Port_Live'])
-    print('\nUsage of project will most likely be saved')
+    print('\nPort Marked As Public(by default), No Worries Though!')
 
   _n_port = []
   new_port_data = {'Is_New': True, 'Dict_Name': 'New_Port_Info', 'Type': 'basic', 'Port_ID': new_port_['New_Port'], 'Is_Live': port_live['Is_New_Port_Live'], 'Port_Security': True} # True by default
@@ -222,7 +233,7 @@ def change_port(__name__, __age__):
     print('1) Keep Port At Default Of Everything')
     print('2) Let New Server Port Know Your Name')
     print('3) Let New Server Port Know Your Name AND Age')
-  
+    
   _c_()
   new_port_choice = input(Fore.GREEN + '> ')
 
