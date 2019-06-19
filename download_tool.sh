@@ -28,3 +28,4 @@ then
   echo -e "$RED \n-->INSTALLING<--\n $WHITE"
   apt update
   git clone https://github.com/ARACADERISE/_Tool-Console_.git
+fi
