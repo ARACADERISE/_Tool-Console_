@@ -1,8 +1,9 @@
 
 INSTALL_DIR=/_Tool-Console_
-RED="\[\033[0;32m\]"
+GREEN="\033[92m"
+RED="\033[91m"
 
-echo -e "$RED $RESET\n\n"
+echo -e "$GREEN $RESET\n\n"
 
 echo -e "
       ___ __   __  __        ___ __  __ _ ____  __  __   ____ 
