@@ -22,29 +22,29 @@ echo -e "$RED \n-->TYPE 'Y' TO INSTALL<--\n"
 echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\nType Below:"
 read anser
 
-echo -e "$RED \n-->Installing Requirements For Tool-Console<--\n$RESET"
-apt update && apt upgrade
-https://github.com/ARACADERISE/_Tool-Console_/blob/master/install.sh
+echo -e "$RED \n-->SETTING UP<--\n $WHITE"
+apt update && apt updgrade
 pkg install python
 
-echo -e "$RED \n-->Setting up...<--\n$RESET $WHITE"
+ehco -e "$GREEN \n-->INSTALLING PROJECT DETAILS<--\n $WHITE"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
-https://github.com/termux/termux-packages.git
-echo -e "$RED \n-->Setting up Ubuntu<--\n$RESET $WHITE"
+https://github.com/termux/termux-packages
+
+echo -e "$RED \n-->INSTALLING UBUNTU<--\n $WHITE"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
 apt-get install proot -y
 apt-get install git -y
 git clone https://github.com/MFDGaming/ubuntu-in-termux.git
-echo -e "\n$OKORANGE To use ubuntu \ncd ubuntu-in-termux \nchmod +x ubuntu.sh \n./ubuntu.sh \ncp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
-./start.sh\n"
-echo -e "$RED \n-->Setting Up Kali<--\n$RESET"
+echo -e "$BLUE \n-->If you want to use Ubuntu: \n1.cd ubuntu-in-termux\n2.chmod +x ubuntu.sh\n3. ./ubuntu.sh\n4.cp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
+./start.sh\n<--\n"
+
+echo -e "$RED \n-->INSTALLING KALY<--\n $WHITE"
 pkg install wget
 wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
 chmod +x kalinethunter
 bash kalinethunter
 
-echo -e "$BLUE \n-->Done!<--\n$RESET"
-echo -e "$BLUE \n-->To run, type python file.py!<--\n $RESET"
-
-echo -e "$BLUE \nE  N  J  O  Y\n $RESET $WHITE"
+echo -e "$RED \n\n -->INSTALLED SUCESSFULLY<--\n $WHITE"
+echo -e "$BLUE \n-->To run, type python file.py<--\n $WHITE"
+echo -e "E   N   J   O   Y!"
