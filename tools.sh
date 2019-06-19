@@ -21,11 +21,11 @@ echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 tools() 
 {
   echo -d "$BLUE \n-->TOOLS<--\n "
-  echo -e "$BLUE 1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
+  echo -e "$BLUE1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
+  read -p "Your Choice >> " choice 
 }
 tools
 choice=1,2,3,4,5,6,7,8,9,10
-read -p ">> Your Choice >> " choice 
 
 
 if [ $choice == 1 ]
@@ -34,7 +34,7 @@ then
   git clone https://github.com/1N3/Sn1per
   echo -e "$BLUE \n1.cd Sniper\n
   2.bash install.sh"
-  tools()
+  tools
 elif [ $choice == 2 ]
 then
   echo -e "$RED \n-->INSTALLING JohnTheRipper<--\n $WHITE"
