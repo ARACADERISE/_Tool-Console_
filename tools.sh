@@ -18,6 +18,7 @@ echo -e "
                    MADE_BY: ARACADE_RISE,
                    "
 if [ $RUN == $true ]
+then
 echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 echo -e "$BLUE \n-->TOOLS<--\n "
 echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
