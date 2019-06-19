@@ -4,26 +4,15 @@ LOOT_DIR=/usr/share/sniper/loot
 PLUGINS_DIR=/usr/share/sniper/plugins
 GO_DIR=~/go/bin
 
-echo -e "$OKGREEN + -- --=[Type 'YES' to continue$RESET"
+echo -e "$OKGREEN Type 'YES' to continue$RESET"
 read answer
-
-mkdir -p $INSTALL_DIR 2> /dev/null
-mkdir -p $LOOT_DIR 2> /dev/null
-mkdir $LOOT_DIR/domains 2> /dev/null
-mkdir $LOOT_DIR/screenshots 2> /dev/null
-mkdir $LOOT_DIR/nmap 2> /dev/null
-mkdir $LOOT_DIR/reports 2> /dev/null
-mkdir $LOOT_DIR/output 2> /dev/null
-mkdir $LOOT_DIR/osint 2> /dev/null
-cp -Rf * $INSTALL_DIR 2> /dev/null
-cd $INSTALL_DIR
 
 echo -e "$OKORANGE + -- --=[Installing Tool-Console$RESET"
 apt update && apt upgrade
-pkg install python3
+pkg install python
 
 echo -e "$OKORANGE + -- --=[Setting up...$RESET"
-git clone https://github.com/ARACADE_RISE/_Tool-Console_.git
+git clone https://github.com/ARACADERISE/_Tool-Console_.git
 echo -e "$OKORANGE + -- --=[Setting up Ubuntu$RESET"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
