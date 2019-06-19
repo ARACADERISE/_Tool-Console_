@@ -27,9 +27,9 @@ apt update && apt upgrade
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/install.sh
 pkg install python
 
-echo -e "$RED \n-->Setting up...<--\n$RESET"
+echo -e "$RED \n-->Setting up...<--\n$RESET $WHITE"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
-echo -e "$RED \n-->Setting up Ubuntu<--\n$RESET"
+echo -e "$RED \n-->Setting up Ubuntu<--\n$RESET $WHITE"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
 apt-get install proot -y
