@@ -92,9 +92,9 @@ then
   install
 elif [ $choice == 21 ]
 then
-  echo -e "$BOLDR \n--> H O P E - Y O U - E N J O Y E D<--\n"
+  echo -e "$BOLDR \n--> Hope you enjoyed. Hey while you're at it, type in python file.py and checkout the actual project! <--\n"
 else
-  echo -e "$BOLDR \n--> ALREADY INSTALLED<--\n"
+  echo -e "$BOLDR \n--> ALREADY INSTALLED<--\n $WHITE"
 fi
 }
 
