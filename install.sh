@@ -19,8 +19,7 @@ echo -e "
 "
  
 echo -e "$RED \n-->TYPE 'Y' TO INSTALL<--\n"
-echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\n"
-echo -e "> "
+echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\nType Below:"
 read anser
 
 echo -e "$RED \n-->Installing Requirements For Tool-Console<--\n$RESET"
