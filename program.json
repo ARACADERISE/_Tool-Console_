@@ -22,6 +22,7 @@
         "error.py",
         "exiting.py",
         "get_module.py",
+        "load.py",
         "load_file.py",
         "packages.py",
         "port.py",
@@ -33,7 +34,8 @@
           "new_server.json.txt",
           "new_data.json.txt",
           "time_info.json.txt",
-          "BUFFER.json.txt"
+          "BUFFER.json.txt",
+          "project.json.txt"
         ]
       ]
     }
