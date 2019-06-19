@@ -22,10 +22,9 @@ echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 tools() 
 {
   while ( $run == $true )
-  do
-    echo -e "$BLUE \n-->TOOLS<--\n "
-    echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
-    read -p "Your Choice >> " choice 
+          echo -e "$BLUE \n-->TOOLS<--\n "
+          echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
+          read -p "Your Choice >> " choice 
   end
 }
 tools
