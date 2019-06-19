@@ -2,6 +2,7 @@
 INSTALL_DIR=/_Tool-Console_
 GREEN="\033[92m"
 RED="\033[91m"
+BLUE="\033[94m"
 
 echo -e "$GREEN $RESET\n\n"
 
@@ -41,7 +42,7 @@ wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinet
 chmod +x kalinethunter
 bash kalinethunter
 
-echo -e "\n-->Done!<--\n$RESET"
-echo -e "\n-->To run, type python file.py!<--\n $RESET"
+echo -e "$BLUE \n-->Done!<--\n$RESET"
+echo -e "$BLUE \n-->To run, type python file.py!<--\n $RESET"
 
-echo -e "\nE  N  J  O  Y\n $RESET"
+echo -e "$BLUE \nE  N  J  O  Y\n $RESET"
