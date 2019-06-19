@@ -1,5 +1,4 @@
 
-INSTALL_DIR=/_Tool-Console_
 GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
@@ -12,19 +11,20 @@ echo -e "
       )((  O (  O / (_/(___( (_(  O /    \___ (  O / (_/\) _) 
      (__)\__/ \__/\___/     \___\__/\_)__(____/\__/\____(____) V.1.0.1
                    Top Tools, Top Developers, Free
-                   MADE_BY: ARACADE_RISE
+                   MADE_BY: ARACADE_RISE,
+                   
+                   THANK YOU for running this part of the project, not only will this help you install Ubuntu/Kali but it also sets
+                   up the project itself again!
 "
  
 echo -e "$RED \n-->TYPE 'Y' TO INSTALL<--\n"
 echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\n"
 read anser
 
-echo -e "$RED \n-->Installing Requirement<--\n$RESET"
+echo -e "$RED \n-->Installing Requirements For Tool-Console<--\n$RESET"
 apt update && apt upgrade
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/install.sh
 pkg install python
-
-echo -e "RED \n-->Stored in $INSTALL_DIR<--\n$RESET"
 
 echo -e "$RED \n-->Setting up...<--\n$RESET"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
