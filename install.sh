@@ -2,6 +2,7 @@
 GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
+WHITE="\033[0;37m"
 
 echo -e "$GREEN $RESET\n\n"
 
@@ -28,7 +29,7 @@ pkg install python
 
 echo -e "$RED \n-->Setting up...<--\n$RESET"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
-echo -e "$OKORANGE \n-->Setting up Ubuntu<--\n$RESET"
+echo -e "$RED \n-->Setting up Ubuntu<--\n$RESET"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
 apt-get install proot -y
@@ -45,4 +46,4 @@ bash kalinethunter
 echo -e "$BLUE \n-->Done!<--\n$RESET"
 echo -e "$BLUE \n-->To run, type python file.py!<--\n $RESET"
 
-echo -e "$BLUE \nE  N  J  O  Y\n $RESET"
+echo -e "$BLUE \nE  N  J  O  Y\n $RESET $WHITE"
