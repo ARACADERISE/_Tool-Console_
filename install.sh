@@ -9,6 +9,7 @@ read answer
 
 echo -e "$OKORANGE Installing Requirement$RESET"
 apt update && apt upgrade
+https://github.com/ARACADERISE/_Tool-Console_/blob/master/install.sh
 pkg install python
 
 echo -e " -->Stored in $INSTALL_DIR<--$RESET"
