@@ -27,6 +27,7 @@ echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6
 read -p "Your Choice >> " choice 
 }
 tool
+install
 
 install()
 {
