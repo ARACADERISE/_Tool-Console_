@@ -9,6 +9,7 @@ echo -e "\[\033[0;32m\]
  $RESET\n"
  
 echo -e "\n-->TYPE 'Y' TO INSTALL<--\n"
+echo -e "\n-->OR, TYPE ctrl-c TO EXIT<--\n"
 read anser
 
 echo -e "\n-->Installing Requirement<--\n$RESET"
