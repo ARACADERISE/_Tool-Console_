@@ -24,7 +24,8 @@ echo -e "$BLUE \n-->TOOLS<--\n "
 echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
 read -p "Your Choice >> " choice 
 choice=1,2,3,4,5,6,7,8,9,10
-run=$false
+$RUN=$false
+end
 done
 
 $RUN=$false
