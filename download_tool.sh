@@ -21,7 +21,7 @@ echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 
 echo -e "$BLUE \n1. Something $WHITE"
 
-read -p "$RED>>$WHITEYour Choice $RED>>$GREEN" choice 
+read -p ">> Your Choice >> " choice 
 
 if [$choice == '1']
 then
