@@ -28,6 +28,8 @@ read -p "Your Choice >> " choice
 }
 tool
 
+install()
+{
 if [ $choice == 1 ]
 then
   echo -e "$RED \n-->INSTALLING SNIPER<--\n $WHITE"
@@ -35,6 +37,7 @@ then
   echo -e "$BLUE \n1.cd Sniper\n2.bash install.sh"
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
   tool
+  install
 elif [ $choice == 2 ]
 then
   echo -e "$RED \n-->INSTALLING JohnTheRipper<--\n $WHITE"
@@ -75,3 +78,4 @@ then
   git clone https://github.com/thelinuxchoice/shellphish
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
 fi
+}
