@@ -85,7 +85,7 @@ then
   install
 elif [ $choice == 8 ]
 then
-  ehco -e "$RED \n-->INSTALLING shellphish<--\n $WHITE"
+  echo -e "$RED \n-->INSTALLING shellphish<--\n $WHITE"
   git clone https://github.com/thelinuxchoice/shellphish
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
   tool
