@@ -34,6 +34,7 @@ then
   git clone https://github.com/1N3/Sn1per
   echo -e "$BLUE \n1.cd Sniper\n2.bash install.sh"
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
+  tool
 elif [ $choice == 2 ]
 then
   echo -e "$RED \n-->INSTALLING JohnTheRipper<--\n $WHITE"
@@ -74,4 +75,3 @@ then
   git clone https://github.com/thelinuxchoice/shellphish
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
 fi
-tool
