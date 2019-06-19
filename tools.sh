@@ -4,6 +4,7 @@ GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
+BOLDR="\033[1;31m"
 RUN=$true
 
 echo -e "$GREEN $RESET\n\n"
@@ -17,14 +18,14 @@ echo -e "
                    Tool Download Version
                    MADE_BY: ARACADE_RISE,
                    "
-if [ $RUN == $true ]
-then
+echo -e "$BOLDR \n-->NOTE: You can only download one at a time<--\n"                   
+
 echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 echo -e "$BLUE \n-->TOOLS<--\n "
 echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
 read -p "Your Choice >> " choice 
 choice=1,2,3,4,5,6,7,8,9,10
-fi
+
 
 RUN=$false
 
