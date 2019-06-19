@@ -19,15 +19,9 @@ echo -e "
                    "
  
 echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
-tools() 
-{
-  while ( $run == $true )
-          echo -e "$BLUE \n-->TOOLS<--\n "
-          echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
-          read -p "Your Choice >> " choice 
-  end
-}
-tools
+echo -e "$BLUE \n-->TOOLS<--\n "
+echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish $WHITE"
+read -p "Your Choice >> " choice 
 choice=1,2,3,4,5,6,7,8,9,10
 run=$false
 
@@ -39,7 +33,6 @@ do
     git clone https://github.com/1N3/Sn1per
     echo -e "$BLUE \n1.cd Sniper\n
     2.bash install.sh"
-    run=$true
   elif [ $choice == 2 ]
   then
     echo -e "$RED \n-->INSTALLING JohnTheRipper<--\n $WHITE"
@@ -49,33 +42,27 @@ do
   then
     echo -e "$RED \n-->INSTALLING HYDRA<--\n $WHITE"
     pkg install hydra
-    run=$true
   elif [ $choice == 4 ]
   then
     echo -e "$RED \n-->INSTALLING METASPLOIT<--\n $WHITE"
     pkg install unstable-repo
     pkg install metasploit
-    run=$true
   elif [ $choice == 5 ]
   then
     echo -e "$RED \n-->INSTALLING sploitego<--\n $WHITE"
     echo -e "$WHITE trying to find package..."
     echo -e "$RED \n-->COULD NOT FIND<--\n"
     echo -e "try visiting $BLUEhttps://github.com/allfro/sploitego"
-    run=$true
   elif [ $choice == 6 ]
   then
     echo -e "$RED \n-->INSTALLING Hunner<--\n $WHITE"
     git clone https://github.com/b3-v3r/Hunner
-    run=$true
   elif [ $choice == 7 ]
   then
     ehco -e "$RED \n-->INSTALLING sqlmap<--\n $WHITE"
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
-    run=$true
   elif [ $choice == 8 ]
   then
     ehco -e "$RED \n-->INSTALLING shellphish<--\n $WHITE"
     git clone https://github.com/thelinuxchoice/shellphish
-    run=$true
 fi
