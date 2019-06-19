@@ -2,6 +2,26 @@ import time
 # import colorama
 from colorama import Fore, Style, Back
 from config import _buffer_
+from packages import _get_, load_term
+
+def _load_terminal(com):
+
+  store = []
+  load = {'name': 'terminal_booting'}
+
+  time.sleep(2)
+  print(Fore.RED + '\n' + '[ ! ]' + Fore.GREEN + 'Booting Terminal..')
+  load.update({'step_1': ['booting the terminal']})
+  time.sleep(6)
+  print(Fore.RED + '[ !! ]' + Fore.GREEN + 'Gathering commands')
+  load.update({'step_2':['getting commands']})
+  commands = [com]
+  store.append(commands);
+  time.sleep(4.8)
+  print(Fore.RED + '[ !!! ]' + Fore.GREEN + 'One more moment...')
+  time.sleep(5)
+  load.update({'final':['loaded']})
+  load_term(load)
 
 def load_():
 
@@ -14,6 +34,7 @@ def load_():
     print('  Getting Project Details...')
     time.sleep(4)
     print('    Fetching Project Files...')
+    _get_()
     time.sleep(3.5)
     print('File Loaded...\n\n')
     time.sleep(1)
@@ -67,8 +88,10 @@ def load_():
       )((  O (  O / (_/(___( (_(  O /    \___ (  O / (_/\) _) 
      (__)\__/ \__/\___/     \___\__/\_)__(____/\__/\____(____)''')
     time.sleep(1.5)
-    print('    ＭＡＤＥ　ＢＹ：　ＡＲＡＣＡＤＥ_ＲＩＳＥ')
-    print('    version 1.0.1\n')
+    print('     ＭＡＤＥ　ＢＹ：　ＡＲＡＣＡＤＥ_ＲＩＳＥ')
+    print('     version 1.0.1')
+    print(Style.BRIGHT + Fore.BLUE + "\n     See _Tool-Console_'s website to see when next update will start/be released(found on github)" + Style.NORMAL + Fore.GREEN)
+    print(Fore.RED + Style.BRIGHT + '     Recommended use of Kali/Ubuntu Linux\n' + Style.NORMAL)
     time.sleep(0.5)
     break
 
@@ -98,7 +121,7 @@ def port_l(p, is_live):
   load_info.append(['port to local started'])
   _append_.append(load_info)
   time.sleep(1.8)
-  print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '   This May Take Awhile   ')
+  print(Fore.WHITE + Back.BLUE + Style.BRIGHT + '   This May Take Awhile   ' + Back.RESET)
   time.sleep(21)
   print(Style.NORMAL + Back.RESET + Fore.GREEN + 'Checking status of port ' + p + '(live/not live)...')
   load_info.append(['scan of port status started'])
