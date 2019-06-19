@@ -1,12 +1,16 @@
 
 INSTALL_DIR=/_Tool-Console_
 
-echo -e "\[\033[0;32m\] 
+echo -e "--\[\033[0;32m\]-- $RESET\n\n"
+
+echo -e "
       ___ __   __  __        ___ __  __ _ ____  __  __   ____ 
     (_  _/  \ /  \(  )  ___ / __/  \(  ( / ___)/  \(  ) (  __)
       )((  O (  O / (_/(___( (_(  O /    \___ (  O / (_/\) _) 
-     (__)\__/ \__/\___/     \___\__/\_)__(____/\__/\____(____)
- $RESET\n"
+     (__)\__/ \__/\___/     \___\__/\_)__(____/\__/\____(____) V.1.0.1
+                   Top Tools, Top Developers, Free
+                   MADE_BY: ARACADE_RISE
+"
  
 echo -e "\n-->TYPE 'Y' TO INSTALL<--\n"
 echo -e "\n-->OR, TYPE ctrl-c TO EXIT<--\n"
