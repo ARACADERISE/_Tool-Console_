@@ -90,6 +90,10 @@ then
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
   tool
   install
+elif [ $choice == 21 ]
+then
+  echo -e "Leaving"
+  fi
 else
   echo -e "$BOLDR \n--> ALREADY INSTALLED<--\n"
 fi
