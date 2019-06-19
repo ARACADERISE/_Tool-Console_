@@ -14,18 +14,18 @@ echo -e "
                    MADE_BY: ARACADE_RISE
 "
  
-echo -e "\n-->TYPE 'Y' TO INSTALL<--\n"
-echo -e "\n-->OR, TYPE ctrl-c TO EXIT<--\n"
+echo -e "$RED \n-->TYPE 'Y' TO INSTALL<--\n"
+echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\n"
 read anser
 
-echo -e "\n-->Installing Requirement<--\n$RESET"
+echo -e "$RED \n-->Installing Requirement<--\n$RESET"
 apt update && apt upgrade
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/install.sh
 pkg install python
 
-echo -e "\n-->Stored in $INSTALL_DIR<--\n$RESET"
+echo -e "RED \n-->Stored in $INSTALL_DIR<--\n$RESET"
 
-echo -e "\n-->Setting up...<--\n$RESET"
+echo -e "$RED \n-->Setting up...<--\n$RESET"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
 echo -e "$OKORANGE \n-->Setting up Ubuntu<--\n$RESET"
 apt-get update && apt-get upgrade -y
@@ -35,7 +35,7 @@ apt-get install git -y
 git clone https://github.com/MFDGaming/ubuntu-in-termux.git
 echo -e "\n$OKORANGE To use ubuntu \ncd ubuntu-in-termux \nchmod +x ubuntu.sh \n./ubuntu.sh \ncp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
 ./start.sh\n"
-echo -e "Setting Up Kali...$RESET"
+echo -e "$RED \n-->Setting Up Kali<--\n$RESET"
 pkg install wget
 wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
 chmod +x kalinethunter
