@@ -20,10 +20,10 @@ echo -e "
 echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 
 echo -e "$BLUE \n1. Something $WHITE"
-choice='1','2','3'
+choice=1,2,3
 read -p ">> Your Choice >> " choice 
 
-if [$choice == '1']
+if [ $choice == 1 ]
 then
   echo -e "$RED \n-->INSTALLING<--\n $WHITE"
   apt update
