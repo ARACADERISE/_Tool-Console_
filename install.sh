@@ -20,19 +20,22 @@ cd $INSTALL_DIR
 
 echo -e "$OKORANGE + -- --=[Installing Tool-Console$RESET"
 apt update && apt upgrade
+pkg install python3
 
 echo -e "$OKORANGE + -- --=[Setting up...$RESET"
-git clone https://github.com/ARACADE_RISE/_Tool-Console.git
-echo -e "$OKORANGE + -- --=[Setting up Ruby...$RESET"
-dpkg-reconfigure ruby
+git clone https://github.com/ARACADE_RISE/_Tool-Console_.git
+echo -e "$OKORANGE + -- --=[Setting up Ubuntu$RESET"
+apt-get update && apt-get upgrade -y
+apt-get install wget -y
+apt-get install proot -y
+apt-get install git -y
+cd ~
+git clone https://github.com/MFDGaming/ubuntu-in-termux.git
+cd ubuntu-in-termux
+chmod +x ubuntu.sh
+./ubuntu.sh
+cp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
+./start.sh
 
-echo -e "$OKORANGE + -- --=[Cleaning up old extensions...$RESET"
-rm -Rf $PLUGINS_DIR 2> /dev/null
-mkdir $PLUGINS_DIR 2> /dev/null
-cd $PLUGINS_DIR
-mkdir -p $PLUGINS_DIR/nmap_scripts/ 2> /dev/null
-mkdir -p $GO_DIR 2> /dev/null
-
-echo -e "$OKORANGE + -- --=[Downloading extensions...$RESET"
 echo -e "$OKORANGE + -- --=[Done!$RESET"
-echo -e "$OKORANGE + -- --=[To run, type 'sniper'! $RESET"
+echo -e "$OKORANGE + -- --=[To run, type python file.py! $RESET"
