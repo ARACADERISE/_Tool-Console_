@@ -92,8 +92,7 @@ then
   install
 elif [ $choice == 21 ]
 then
-  echo -e "Leaving"
-  fi
+  echo -e "$BOLDR \n--> H O P E - Y O U - E N J O Y E D<--\n"
 else
   echo -e "$BOLDR \n--> ALREADY INSTALLED<--\n"
 fi
