@@ -64,4 +64,6 @@ elif [ $choice == 8 ]
 then
   ehco -e "$RED \n-->INSTALLING shellphish<--\n $WHITE"
   git clone https://github.com/thelinuxchoice/shellphish
+else
+  echo -e "$RED \n-->ALREADY INSTALLED<--\n"
 fi
