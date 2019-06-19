@@ -25,7 +25,9 @@ echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6
 read -p "Your Choice >> " choice 
 choice=1,2,3,4,5,6,7,8,9,10
 run=$false
+done
 
+$RUN=$false
 
 if [ $choice == 1 ]
 then
@@ -66,4 +68,3 @@ then
   ehco -e "$RED \n-->INSTALLING shellphish<--\n $WHITE"
   git clone https://github.com/thelinuxchoice/shellphish
 fi
-done
