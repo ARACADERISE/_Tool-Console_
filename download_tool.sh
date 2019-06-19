@@ -19,9 +19,11 @@ echo -e "
  
 echo -e "$RED \n--> Choose A Tool <--\n $WHITE"
 
-user = echo -e "$BLUE \n1. Something $WHITE"
+echo -e "$BLUE \n1. Something $WHITE"
 
-if [user == '1']
+read -p "$RED>>$WHITEYour Choice $RED>>$GREEN" choice 
+
+if [$choice == '1']
 then
   apt update
   git clone https://github.com/ARACADERISE/_Tool-Console_.git
