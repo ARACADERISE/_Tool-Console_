@@ -34,8 +34,7 @@ then
   git clone https://github.com/1N3/Sn1per
   echo -e "$BLUE \n1.cd Sniper\n
   2.bash install.sh"
-  then
-    tools
+tools
 elif [ $choice == 2 ]
 then
   echo -e "$RED \n-->INSTALLING JohnTheRipper<--\n $WHITE"
