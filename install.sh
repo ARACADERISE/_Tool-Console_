@@ -29,6 +29,7 @@ pkg install python
 
 echo -e "$RED \n-->Setting up...<--\n$RESET $WHITE"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
+https://github.com/termux/termux-packages.git
 echo -e "$RED \n-->Setting up Ubuntu<--\n$RESET $WHITE"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
