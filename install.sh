@@ -1,6 +1,6 @@
 
 INSTALL_DIR=/_Tool-Console_
-RED=\[\033[0;32m\]
+RED="\[\033[0;32m\]"
 
 echo -e "$RED $RESET\n\n"
 
