@@ -39,11 +39,14 @@ git clone https://github.com/MFDGaming/ubuntu-in-termux.git
 echo -e "$BLUE \n-->If you want to use Ubuntu: \n1.cd ubuntu-in-termux\n2.chmod +x ubuntu.sh\n3. ./ubuntu.sh\n4.cp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
 ./start.sh\n<--\n"
 
-echo -e "$RED \n-->INSTALLING KALY<--\n $WHITE"
+echo -e "$RED \n-->INSTALLING KALI<--\n $WHITE"
 pkg install wget
 wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
 chmod +x kalinethunter
 bash kalinethunter
+
+echo -e "$RED \n-->INSTALLING PHP<--\n $WHITE"
+apt install php
 
 echo -e "$RED \n\n -->INSTALLED SUCESSFULLY<--\n $WHITE"
 echo -e "$BLUE \n-->To run, type python file.py<--\n $WHITE"
