@@ -42,8 +42,9 @@ echo -e "$BLUE \n-->If you want to use Ubuntu: \n1.cd ubuntu-in-termux\n2.chmod 
 echo -e "$RED \n-->INSTALLING KALI<--\n $WHITE"
 pkg install wget
 wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
-chmod +x kalinethunter
-bash kalinethunter
+echo -e "$BLUE To run: \n
+1.chmod +x kalinethunter\n
+2.bash kalinethunter"
 
 echo -e "$RED \n-->INSTALLING PHP<--\n $WHITE"
 apt install php
