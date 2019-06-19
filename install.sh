@@ -19,8 +19,8 @@ echo -e "
 "
  
 echo -e "$RED \n-->TYPE 'Y' TO INSTALL<--\n"
-echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\nType Below:"
-read anser
+echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\n"
+read -p "#> "
 
 echo -e "$RED \n-->SETTING UP<--\n $WHITE"
 apt update && apt updgrade
