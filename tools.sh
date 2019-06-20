@@ -25,7 +25,8 @@ info()
 {
 echo -e "$BOLDR \n==>NOTE: You can only download one at a time<==\n"     
 echo -e "$BOLDR \n==> After the tool downloads you can then type run-nameoftoolhere instead of putting in a number, or you can type
-open-project to run the python side of things!<==\n"
+open-project to run the python side of things! (NOTE: It is not case sensetive meaning the file name can be in all lowercase even if
+it has uppercase letters in it)<==\n"
 }
 info
 
@@ -34,7 +35,7 @@ tool()
 # echo -e "$BLUE \n-->TOOLS<--\n "
 echo -e "$BOLDR \n==> C H O O S E - O N E - O F - T H E - F O L L O W I N G - T O O L S <==\n"
 echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish\n9.userrecon\n10.BlackEye
-\n11.InstaShell\n12.SayCheese\n13.ClipBoardMe\n14.D-tect\n15.Nmap\n16.RED_HAWK\n17.Crips\n18.OSIF\n19.Leave$WHITE"
+\n11.InstaShell\n12.SayCheese\n13.ClipBoardMe\n14.IP-Tracer\n15.Nmap\n16.RED_HAWK\n17.Crips\n18.OSIF\n19.Leave$WHITE"
 read -p "Your Choice >> " choice 
 }
 
@@ -110,7 +111,7 @@ then
   install
 elif [ $choice == 10 ]
 then
-  echo -e "$RED \n--> INSTALLING blackeye <--\n $WHITE"
+  echo -e "$RED \n==> INSTALLING blackeye <==\n $WHITE"
   git clone https://github.com/thelinuxchoice/blackeye
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D <==\n $WHITE"
   tool
@@ -131,15 +132,15 @@ then
   install
 elif [ $choice == 13 ]
 then
-  echo -e "$RED \n--> INSTALLING ClipBoardMe <--\n $WHITE"
+  echo -e "$RED \n==> INSTALLING ClipBoardMe <==\n $WHITE"
   git clone https://github.com/thelinuxchoice/clipboardme.git
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D <==\n $WHITE"
   tool
   install
 elif [ $choice == 14 ]
 then
-  echo -e "$RED \n--> INSTALLING D-tect <--\n $WHITE"
-  git clone https://github.com/ihamquentin/D-tect.git
+  echo -e "$RED \n==> INSTALLING IP-Tracer <==\n $WHITE"
+  git clone https://github.com/Rajkumrdusad/IP-Tracer.git
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D <==\n $WHITE"
   tool
   install
@@ -181,9 +182,6 @@ elif [ $choice == 'open-project' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO file.py <==\n $WHITE"
   python file.py
-  echo -e "$RED***************************"
-  echo -e "$BOLDR \n==> WELCOME BACK! <==\n $WHITE"
-  echo -e "$RED***************************"
   title
   info
   tool
@@ -226,6 +224,111 @@ then
 elif [ $choice == 'run-sqlmap' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO Sqlmap <==\n $WHITE"
+  cd sqlmap-dev
+  python sqlmap.py --wizard
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-shellphish' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO SHELLPHISH <==\n $WHITE"
+  cd shellphish
+  bash shellphish.sh
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-userrecon' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO userrecon <==\n $WHITE"
+  cd userrecon
+  bash userrecon.sh
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-blackeye' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO BlackEye <==\n $WHITE"
+  cd blackeye
+  bash blackeye.sh
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-instashell' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO InstalShell <==\n $WHITE"
+  cd instashell
+  bash install.sh
+  bash instashell.sh
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-saycheese' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO SayCheese <==\n $WHITE"
+  cd saycheese
+  bash saycheese.sh
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-clipboardme' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO ClipboardMe <==\n $WHITE"
+  cd clipboardme
+  bash clipboardme.sh
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-ip-tracer' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO IP-Tracer <==\n $WHITE"
+  cd IP-Tracer
+  chmod +x install
+  sh install
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-nmap' ]
+then
+  echo -e "$BOLDR \n==> Independent Terminal App that requires arguments, or a user format, to run. Sorry <==\n $WHITE"
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-red_hawk' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO RED_HAWK <==\n $WHITE"
+  cd RED_HAWK
+  php rhawk.php
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-crips' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO Crips <==\n $WHITE"
+  cd Crips
+  python2 crips.py
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-osif' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO OSIF <==\n $WHITE"
+  cd OSIF
+  python2 osif.py
+  title
+  info
+  tool
+  install
 else
   echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
