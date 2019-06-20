@@ -28,6 +28,7 @@ pkg install python
 
 ehco -e "$GREEN \n==>INSTALLING PROJECT DETAILS<==\n $WHITE"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
+https://github.com/ARACADERISE/_Tool-Console_/blob/master/tools.sh
 https://github.com/termux/termux-packages
 apt install git
 
