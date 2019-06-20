@@ -10,7 +10,7 @@ echo -e "$GREEN $RESET\n\n"
 
 title()
 {
-echo -e "
+echo -e "$GREEN
       ___ __   __  __        ___ __  __ _ ____  __  __   ____ 
     (_  _/  \ /  \(  )  ___ / __/  \(  ( / ___)/  \(  ) (  __)
       )((  O (  O / (_/(___( (_(  O /    \___ (  O / (_/\) _) 
@@ -184,7 +184,9 @@ elif [ $choice == 'open-project' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO file.py <==\n $WHITE"
   python file.py
+  echo -e "$RED***************************"
   echo -e "$BOLDR \n==> WELCOME BACK! <==\n $WHITE"
+  echo -e "$RED***************************"
   title
   info
   tool
