@@ -50,7 +50,7 @@ echo -e "$BLUE To run: \n
 echo -e "$RED \n==>INSTALLING PHP<==\n $WHITE"
 apt install php
 
-echo -e "$RED \n\n ==>INSTALLED SUCESSFULLY<==\n $WHITE"
-echo -e "$BLUE \n==>To run, type python file.py<==\n $WHITE"
-echo -e "$BLUE \n==>Or type $RED bash tools.sh $BLUE to install the tools offered<==\n $WHITE"
+echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
+echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
+echo -e "$BLUE ==>Or type $RED bash tools.sh $BLUE to install the tools offered<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
