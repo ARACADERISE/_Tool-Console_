@@ -171,12 +171,12 @@ then
 elif [ $choice == 19 ]
 then
   echo -e "$BOLDR \n==> Hope you enjoyed. Hey while you're at it, type in python file.py and checkout the actual project! <==\n $WHITE"
-elif [ $choice == 'python file.py' ]
+elif [ $choice == 'open-project' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO file.py <==\n $WHITE"
   python file.py
 else
-  echo -e "$BOLDR \n==> ALREADY INSTALLED<==\n $WHITE"
+  echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
 }
 
