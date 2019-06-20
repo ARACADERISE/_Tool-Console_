@@ -219,8 +219,6 @@ then
   echo -e "$BOLDR \n==> BOOTING UP SNIPER <==\n $WHITE"
   cd Sn1per
   bash install.sh
-  echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
-  bash sniper --help
   title
   info
   tool
