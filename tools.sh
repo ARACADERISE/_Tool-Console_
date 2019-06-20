@@ -109,8 +109,8 @@ then
   echo -e "$RED \n==>INSTALLING userrecon<==\n $WHITE"
   git clone https://github.com/thelinuxchoice/userrecon.git
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
-  tools
-  installed
+  tool
+  install
 elif [ $choice == 10 ]
 then
   echo -e "$RED \n-->INSTALLING blackeye<--\n $WHITE"
