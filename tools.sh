@@ -207,6 +207,25 @@ elif [ $choice == 'run-metasploit' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO METASPLOIT <==\n $WHITE"
   bash metasploit.sh
+  tool
+  install
+elif [ $choice == 'run-sploitego' ]
+then
+  echo -e "$BOLDR \n==> Independent Terminal App that requires arguments, or a user format, to run. Sorry <==\n $WHITE"
+  tool
+  install
+elif [ $choice == 'run-hunner' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO Hunner <==\n $WHITE"
+  cd hunner
+  python hunner.py
+  title
+  info
+  tool
+  install
+elif [ $choice == 'run-sqlmap' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO Sqlmap <==\n $WHITE"
 else
   echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
