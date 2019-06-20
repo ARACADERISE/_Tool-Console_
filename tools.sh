@@ -171,6 +171,10 @@ then
 elif [ $choice == 19 ]
 then
   echo -e "$BOLDR \n==> Hope you enjoyed. Hey while you're at it, type in python file.py and checkout the actual project! <==\n $WHITE"
+elif [ $choice == 'python file.py' ]
+then
+  echo -e "$BOLDR \n==> BOOTING INTO file.py <==\n $WHITE"
+  python file.py
 else
   echo -e "$BOLDR \n==> ALREADY INSTALLED<==\n $WHITE"
 fi
