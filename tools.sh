@@ -50,7 +50,7 @@ then
   install
 elif [ $choice == 2 ]
 then
-  echo -e "$RED \n==>INSTALLING JohnTheRipper<--\n $WHITE"
+  echo -e "$RED \n==>INSTALLING JohnTheRipper<==\n $WHITE"
   git clone https://github.com/magnumripper/JohnTheRipper.git
   echo -e "$BLUE \n1.cd JohnTheRipper\n2.cd run"
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
