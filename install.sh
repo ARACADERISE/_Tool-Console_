@@ -52,6 +52,9 @@ echo -e "$BLUE To run: \n
 echo -e "$RED \n==>INSTALLING PHP<==\n $WHITE"
 apt install php
 
+echo -e "$RED \n==>At no point is it alright to edit the script source and claim it as your own work, even at fault of deleting all code and creating your
+own version of it<==\n $WHITE"
+
 echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
 echo -e "$BLUE ==>Or type $RED bash tools.sh $BLUE to install the tools offered<== $WHITE"
