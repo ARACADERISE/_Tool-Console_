@@ -38,7 +38,7 @@ if [ $choice == 1 ]
 then
   echo -e "$RED \n==>INSTALLING SNIPER<==\n $WHITE"
   git clone https://github.com/1N3/Sn1per
-  echo -e "$BLUE \n1.cd Sniper\n2.bash install.sh"
+  # echo -e "$BLUE \n1.cd Sniper\n2.bash install.sh"
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
   tool
   install
