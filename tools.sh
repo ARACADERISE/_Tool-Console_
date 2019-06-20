@@ -362,7 +362,7 @@ then
     _com
   fi
   }
-  com
+  _com
   title
   info
   tool
