@@ -56,7 +56,9 @@ echo -e "$RED \n==>At no point is it alright to edit the script source and claim
 own version of it<==\n $WHITE"
 
 echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
-echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
-echo -e "$BLUE ==>Or type $RED bash tools.sh $BLUE to install the tools offered<== $WHITE"
+# echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
+echo -e "$BLUE ==>You can type $RED bash tools.sh $BLUE to install the tools offered<== $WHITE"
 echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
+
+python file.py
