@@ -67,7 +67,7 @@ elif [ $choice == 4 ]
 then
   echo -e "$RED \n==> INSTALLING METASPLOIT <==\n $WHITE"
   pkg update && pkg upgrade -y && pkg install wget curl openssh git -y
-  pkg pkg install unstable-repo
+  pkg install unstable-repo
   wget Auxilus.github.io/metasploit.sh
   pkg install metasploit
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D <==\n $WHITE"
