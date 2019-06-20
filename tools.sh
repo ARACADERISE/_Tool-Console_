@@ -24,10 +24,7 @@ title
 info()
 {
 echo -e "$BOLDR \n==>NOTE: You can only download one at a time<==\n"     
-echo -e "$BOLDR \n==> After the tool downloads, type cd, then type ls, then type cd NAME_OF_TOOL and if it is a 
-.sh file then bash FILE.sh, and if it a py file you type the version of python it uses, ex python(being python3)
-FILENAME.py, or python2(being python 2) FILENAME.py. To have latest version of python installed you must run
-bash install.sh<==\n"
+echo -e "$BOLDR \n==> After the tool downloads you can then type run-NAMEOFTOOLHERE instead of putting in a number <==\n"
 }
 info
 
