@@ -176,6 +176,9 @@ elif [ $choice == 'open-project' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO file.py <==\n $WHITE"
   python file.py
+  echo -e "$BOLDR \n==> BOOTED! ENJOY <==\n $WHITE"
+  tool
+  install
 else
   echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
