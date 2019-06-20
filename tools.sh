@@ -323,8 +323,17 @@ elif [ $choice == 'run-ip-tracer' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO IP-Tracer <==\n $WHITE"
   cd IP-Tracer
-  chmod +x install
-  sh install
+  echo -e "$BOLDR \n==> BOOTED <==\n"
+  bash ip-tracer
+  read -p "command>> " com
+  if [ $com == 'm' ]
+  then
+    bash ip-tracer -m
+  elif [ $com == 't' ]
+  then
+    read -p "command-t>>target>> " targ
+    bash ip-tracer -t $targ
+  fi
   title
   info
   tool
