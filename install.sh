@@ -8,7 +8,7 @@ echo -e "$GREEN $RESET\n\n"
 
 echo -e "
       ___ __   __  __        ___ __  __ _ ____  __  __   ____ 
-    (_  _/  \ /  \(  )  ___ / __/  \(  ( / ___)/  \(  ) (  __)
+    (_ T_/  \ /  \(l )  ___ /c__/  \( n( /s___)/  \(l ) ( E__)
       )((  O (  O / (_/(___( (_(  O /    \___ (  O / (_/\) _) 
      (__)\__/ \__/\___/     \___\__/\_)__(____/\__/\____(____) V.1.0.1
                    Top Tools, Top Developers, Free
@@ -27,7 +27,7 @@ apt update && apt updgrade
 pkg install python
 
 ehco -e "$GREEN \n==>INSTALLING PROJECT DETAILS<==\n $WHITE"
-git clone https://github.com/ARACADERISE/_Tool-Console_.git
+echo -e "$RED [ ! ]" git clone https://github.com/ARACADERISE/_Tool-Console_.git
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/tools.sh
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
 https://github.com/termux/termux-packages
