@@ -54,5 +54,6 @@ apt install php
 
 echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
-echo -e "$BLUE ==>Or type $RED bash tools.sh $BLUE to install the tools offered<==\n $WHITE"
+echo -e "$BLUE ==>Or type $RED bash tools.sh $BLUE to install the tools offered<== $WHITE"
+echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
