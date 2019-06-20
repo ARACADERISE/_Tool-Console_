@@ -46,18 +46,22 @@ then
   mode()
   {
   echo -e "$BOLDR \n==> SETUP <==\n $WHITE"
-  read -p "mode(one-word)(type 'help' to see modes)>> " setup
-  if [ $setup == 'help' ]
-  then
-    echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
-    cd Sn1per
-    bash sniper --help
-    echo -e "\n"
-    mode
-  elif [ $setup == 'normal' ]
+  read -p "normal-mode[y/n]?>> " setup
+  if [ $setup == 'y' ]
   then
     read -p "normal-mode>>target>> --" theTarget
     bash sniper -t $theTarget
+    tite
+    info
+    tool
+    install
+  elif [ $setup == 'n' ]
+  then
+    echo -e "$BOLDR \n==> REDIRECTING YOU... <==\n"
+    title
+    info
+    tool
+    install
   elif [ $setup == 'leave' ]
   then
     echo -e "$BOLDR \n==> Bye bye <==\n"
