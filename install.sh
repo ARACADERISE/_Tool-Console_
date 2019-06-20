@@ -51,4 +51,5 @@ apt install php
 
 echo -e "$RED \n\n -->INSTALLED SUCESSFULLY<--\n $WHITE"
 echo -e "$BLUE \n-->To run, type python file.py<--\n $WHITE"
+echo -e "$BLUE \n-->Or type $RED bash tools.sh $BLUE to install the tools offered<--\n $WHITE"
 echo -e "E   N   J   O   Y!"
