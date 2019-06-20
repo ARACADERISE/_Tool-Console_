@@ -18,38 +18,39 @@ echo -e "
                    up the project itself again!
 "
  
-echo -e "$RED \n-->TYPE 'Y' TO INSTALL<--\n"
-echo -e "$RED \n-->OR, TYPE ctrl-c TO EXIT<--\n"
+echo -e "$RED \n==>TYPE 'Y' TO INSTALL<==\n"
+echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
 read -p "#> "
 
-echo -e "$RED \n-->SETTING UP<--\n $WHITE"
+echo -e "$RED \n==>SETTING UP<==\n $WHITE"
 apt update && apt updgrade
 pkg install python
 
-ehco -e "$GREEN \n-->INSTALLING PROJECT DETAILS<--\n $WHITE"
+ehco -e "$GREEN \n==>INSTALLING PROJECT DETAILS<==\n $WHITE"
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
 https://github.com/termux/termux-packages
+apt install git
 
-echo -e "$RED \n-->INSTALLING UBUNTU<--\n $WHITE"
+echo -e "$RED \n==>INSTALLING UBUNTU<==\n $WHITE"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
 apt-get install proot -y
 apt-get install git -y
 git clone https://github.com/MFDGaming/ubuntu-in-termux.git
-echo -e "$BLUE \n-->If you want to use Ubuntu: \n1.cd ubuntu-in-termux\n2.chmod +x ubuntu.sh\n3. ./ubuntu.sh\n4.cp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
-./start.sh\n<--\n"
+echo -e "$BLUE \n==>If you want to use Ubuntu: \n1.cd ubuntu-in-termux\n2.chmod +x ubuntu.sh\n3. ./ubuntu.sh\n4.cp ~/ubuntu-in-termux/resolv.conf ~/ubuntu-in-termux/ubuntu-fs/etc/
+./start.sh\n<==\n"
 
-echo -e "$RED \n-->INSTALLING KALI<--\n $WHITE"
+echo -e "$RED \n==>INSTALLING KALI<==\n $WHITE"
 pkg install wget
 wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
 echo -e "$BLUE To run: \n
 1.chmod +x kalinethunter\n
 2.bash kalinethunter"
 
-echo -e "$RED \n-->INSTALLING PHP<--\n $WHITE"
+echo -e "$RED \n==>INSTALLING PHP<==\n $WHITE"
 apt install php
 
-echo -e "$RED \n\n -->INSTALLED SUCESSFULLY<--\n $WHITE"
-echo -e "$BLUE \n-->To run, type python file.py<--\n $WHITE"
-echo -e "$BLUE \n-->Or type $RED bash tools.sh $BLUE to install the tools offered<--\n $WHITE"
+echo -e "$RED \n\n ==>INSTALLED SUCESSFULLY<==\n $WHITE"
+echo -e "$BLUE \n==>To run, type python file.py<==\n $WHITE"
+echo -e "$BLUE \n==>Or type $RED bash tools.sh $BLUE to install the tools offered<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
