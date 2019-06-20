@@ -191,6 +191,11 @@ then
   echo -e "$BOLDR \n==> BOOTING UP SNIPER <==\n $WHITE"
   cd Sn1per
   bash install.sh
+  sniper
+  title
+  info
+  tool
+  install
 elif [ $choice == 'run-johntheripper' ]
 then
   echo -e "$BOLDR \n==> Independent Terminal App that requires arguments, or a user format, to run. Sorry <==\n $WHITE"
