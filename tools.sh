@@ -352,6 +352,7 @@ then
   then
     read -p "normal-mode>>target>> --" theTarget
     bash sniper -t $theTarget 
+fi
 
 # CALLING THEM
 tool
