@@ -191,7 +191,13 @@ then
   echo -e "$BOLDR \n==> BOOTING UP SNIPER <==\n $WHITE"
   cd Sn1per
   bash install.sh
+  echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
   bash sniper --help
+  read -p "mode(one-word)>> " setup
+  if [ $setup == 'normal' ]
+  then
+    read -p "normal-mode>>target>> --" theTarget
+    bash sniper -t $theTarget 
   title
   info
   tool
