@@ -351,7 +351,8 @@ then
   elif [ $setup == 'normal' ]
   then
     read -p "normal-mode>>target>> --" theTarget
-    bash sniper -t $theTarget 
+    bash sniper -t $theTarget
+  fi
 fi
 
 # CALLING THEM
