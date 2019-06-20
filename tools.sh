@@ -49,9 +49,9 @@ then
   read -p "normal-mode[y/n]?>> " setup
   if [ $setup == 'y' ]
   then
-    read -p "normal-mode>>target>> --" theTarget
-    bash sniper -t $theTarget
-    tite
+    read -p "normal-mode>>target>> " theTarget
+    bash sniper -t --$theTarget
+    title
     info
     tool
     install
