@@ -191,6 +191,14 @@ then
   echo -e "$BOLDR \n==> BOOTING UP SNIPER <==\n $WHITE"
   cd Sn1per
   bash install.sh
+  echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
+  bash sniper --help
+  title
+  info
+  tool
+  install
+elif [ $choice == 'setup-sniper' ]
+then
   echo -e "$BOLDR \n==> SETUP <==\n $WHITE"
   read -p "mode(one-word)(type 'help' to see modes)>> " setup
   if [ $setup == 'help' ]
@@ -201,10 +209,6 @@ then
   then
     read -p "normal-mode>>target>> --" theTarget
     bash sniper -t $theTarget 
-  title
-  info
-  tool
-  install
 elif [ $choice == 'run-johntheripper' ]
 then
   echo -e "$BOLDR \n==> Independent Terminal App that requires arguments, or a user format, to run. Sorry <==\n $WHITE"
