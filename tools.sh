@@ -137,7 +137,7 @@ then
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
   tool
   install
-elif [ $ choice == 15 ]
+elif [ $choice == 15 ]
 then
   echo -e "$RED \n==>INSTALLING Nmap<==\n $WHITE"
   pkg install nmap
