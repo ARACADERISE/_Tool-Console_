@@ -8,6 +8,8 @@ BOLDR="\033[1;31m"
 
 echo -e "$GREEN $RESET\n\n"
 
+title()
+{
 echo -e "
       ___ __   __  __        ___ __  __ _ ____  __  __   ____ 
     (_  _/  \ /  \(  )  ___ / __/  \(  ( / ___)/  \(  ) (  __)
@@ -17,11 +19,17 @@ echo -e "
                  Tool Download Version
                  MADE_BY: ARACADE_RISE,
                    "
+}
+title
+info()
+{
 echo -e "$BOLDR \n==>NOTE: You can only download one at a time<==\n"     
 echo -e "$BOLDR \n==> After the tool downloads, type cd, then type ls, then type cd NAME_OF_TOOL and if it is a 
 .sh file then bash FILE.sh, and if it a py file you type the version of python it uses, ex python(being python3)
 FILENAME.py, or python2(being python 2) FILENAME.py. To have latest version of python installed you must run
 bash install.sh<==\n"
+}
+info
 
 tool()
 {
@@ -176,7 +184,9 @@ elif [ $choice == 'open-project' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO file.py <==\n $WHITE"
   python file.py
-  echo -e "$BOLDR \n==> BOOTED! ENJOY <==\n $WHITE"
+  echo -e "$BOLDR \n==> WELCOME BACK! <==\n $WHITE"
+  title
+  info
   tool
   install
 else
