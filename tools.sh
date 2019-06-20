@@ -43,17 +43,27 @@ install()
 {
 if [ $choice == 'setup-sniper' ]
 then
+  mode()
+  {
   echo -e "$BOLDR \n==> SETUP <==\n $WHITE"
   read -p "mode(one-word)(type 'help' to see modes)>> " setup
   if [ $setup == 'help' ]
   then
     echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
+    cd Sn1per
     bash sniper --help
+    echo -e "\n"
+    mode
   elif [ $setup == 'normal' ]
   then
     read -p "normal-mode>>target>> --" theTarget
     bash sniper -t $theTarget
+  elif [ $setup == 'leave' ]
+  then
+    echo -e "$BOLDR \n==> Bye bye <==\n"
   fi
+  }
+  mode
 elif [ $choice == 1 ]
 then
   echo -e "$RED \n==> INSTALLING SNIPER <==\n $WHITE"
