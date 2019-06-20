@@ -50,6 +50,7 @@ then
   if [ $setup == 'y' ]
   then
     read -p "normal-mode>>target>> " theTarget
+    cd Sn1per
     bash sniper -t --$theTarget
     title
     info
