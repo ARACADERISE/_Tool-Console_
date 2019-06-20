@@ -100,21 +100,29 @@ then
   echo -e "$RED \n==>INSTALLING userrecon<==\n $WHITE"
   git clone https://github.com/thelinuxchoice/userrecon.git
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 10 ]
 then
   echo -e "$RED \n-->INSTALLING blackeye<--\n $WHITE"
   git clone https://github.com/thelinuxchoice/blackeye
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 11 ]
 then
   echo -e "$RED \n==>INSTALLING InstaShell<==\n $WHITE"
   git clone https://github.com/thelinuxchoice/instashell
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 12 ]
 then
   echo -e "$RED \n==>INSTALLING SayCheese<==\n $WHITE"
   git clone https://github.com/thelinuxchoice/saycheese
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 13 ]
 then
   echo -e "$RED \n-->INSTALLING ClipBoardMe<--\n $WHITE"
@@ -125,21 +133,29 @@ then
   echo -e "$RED \n-->INSTALLING D-tect<--\n $WHITE"
   git clone https://github.com/ihamquentin/D-tect.git
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $ choice == 15 ]
 then
   echo -e "$RED \n==>INSTALLING Nmap<==\n $WHITE"
   pkg install nmap
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 16 ]
 then
   echo -e "$RED \n==>INSTALLING RED_HAWK<==\n $WHITE"
   git clone https://github.com/Tuhinshubhra/RED_HAWK
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 17 ]
 then
   echo -e "$RED \n==>INSTALLING Crips<==\n $WHITE"
   git clone https://github.com/Manisso/Crips.git
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D<==\n $WHITE"
+  tools
+  installed
 elif [ $choice == 18 ]
 then
   echo -e "$RED \n==>INSTALLING OSIF<==\n $WHITE"
@@ -148,6 +164,8 @@ then
   echo -e "$BOLDR \n==>NOW INSTALLING OSIF<==\n $WHITE"
   git clone https://github.com/ciku370/OSIF
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
+  tools
+  installed
 elif [ $choice == 19 ]
 then
   echo -e "$BOLDR \n==> Hope you enjoyed. Hey while you're at it, type in python file.py and checkout the actual project! <==\n $WHITE"
