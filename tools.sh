@@ -28,7 +28,8 @@ tool()
 # echo -e "$BLUE \n-->TOOLS<--\n "
 echo -e "$BOLDR \n==> C H O O S E - O N E - O F - T H E - F O L L O W I N G - T O O L S <==\n"
 echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish\n9.userrecon\n10.BlackEye
-\n11.InstaShell\n12.SayCheese\n13.ClipBoardMe\n14.D-tect\n15.Nmap\n16.RED_HAWK\n17.Crips\n18.OSIF\n19.Leave\n$WHITE"
+\n11.InstaShell\n12.SayCheese\n13.ClipBoardMe\n14.D-tect\n15.Nmap\n16.RED_HAWK\n17.Crips\n18.OSIF\n19.Leave\nOR type open-project to run
+file.py$WHITE"
 read -p "Your Choice >> " choice 
 }
 
