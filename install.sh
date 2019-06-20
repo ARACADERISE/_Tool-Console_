@@ -18,8 +18,8 @@ echo -e "
                    up the project itself again!
 "
  
-echo -e "$RED \n==>TYPE 'Y' TO INSTALL<==\n"
-echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
+echo -e "$RED \n==>TYPE 'Y' TO INSTALL<=="
+#echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
 read -p "#> "
 
 echo -e "$RED \n==>SETTING UP<==\n $WHITE"
