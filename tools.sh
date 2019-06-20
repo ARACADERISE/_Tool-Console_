@@ -325,44 +325,44 @@ then
   cd IP-Tracer
   echo -e "$BOLDR \n==> BOOTED <==\n $WHITE"
   bash ip-tracer
-  read -p "command(type 'exit' to leave)>> " com
-  _com()
+  oh()
   {
+  read -p "command(type 'exit' to leave)>> " com
   if [ $com == 'm' ]
   then
     cd IP-Tracer
     bash ip-tracer -m
-    _com
+    oh
   elif [ $com == 't' ]
   then
     read -p "command-t>>target>> " targ
     cd IP-Tracer
     bash ip-tracer -t $targ
-    _com
+    oh
   elif [ $com == 'h' ]
   then
     cd IP-Tracer
     bash ip-tracer -h
-    _com
+    oh
   elif [ $com == 'u' ]
   then
     cd IP-Tracer
     bash ip-tracer -u
-    _com
+    oh
   elif [ $com == 'start' ]
   then
     cd IP-Tracer
     bash ip-tracer start
-    _com
+    oh
   elif [ $com == 'exit' ]
   then
     echo -e "$BOLDR \n==> HOPE YOU ENJOYED IP-Tracer <==\n"
   else
     echo -e "$BOLDR \n==> INVALID <==\n $WHITE"
-    _com
+    oh
   fi
   }
-  _com
+  oh
   title
   info
   tool
