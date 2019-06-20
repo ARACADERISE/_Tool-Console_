@@ -193,6 +193,7 @@ then
   bash install.sh
   echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
   bash sniper --help
+  echo -e "$BOLDR \n==> SETUP <==\n $WHITE"
   read -p "mode(one-word)>> " setup
   if [ $setup == 'normal' ]
   then
