@@ -188,6 +188,15 @@ then
   info
   tool
   install
+elif [ $choice == 'run-sniper' ]
+then
+  echo -e "$BOLDR \n==> BOOTING UP SNIPER <==\n $WHITE"
+  cd Sn1per
+  bash install.sh
+elif [ $choice == 'run-johntheripper' ]
+then
+  echo -e "$BOLDR \n==> BOOTING UP JohnTheRipper <==\n $WHITE"
+  
 else
   echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
