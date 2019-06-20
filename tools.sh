@@ -41,7 +41,20 @@ read -p "Your Choice >> " choice
 
 install()
 {
-if [ $choice == 1 ]
+if [ $choice == 'setup-sniper' ]
+then
+  echo -e "$BOLDR \n==> SETUP <==\n $WHITE"
+  read -p "mode(one-word)(type 'help' to see modes)>> " setup
+  if [ $setup == 'help' ]
+  then
+    echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
+    bash sniper --help
+  elif [ $setup == 'normal' ]
+  then
+    read -p "normal-mode>>target>> --" theTarget
+    bash sniper -t $theTarget
+  fi
+elif [ $choice == 1 ]
 then
   echo -e "$RED \n==> INSTALLING SNIPER <==\n $WHITE"
   git clone https://github.com/1N3/Sn1per
@@ -339,21 +352,6 @@ else
   echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
 }
-
-if [ $choice == 'setup-sniper' ]
-then
-  echo -e "$BOLDR \n==> SETUP <==\n $WHITE"
-  read -p "mode(one-word)(type 'help' to see modes)>> " setup
-  if [ $setup == 'help' ]
-  then
-    echo -e "$BOLDR \n==> LIST OF COMMANDS <==\n $WHITE"
-    bash sniper --help
-  elif [ $setup == 'normal' ]
-  then
-    read -p "normal-mode>>target>> --" theTarget
-    bash sniper -t $theTarget
-  fi
-fi
 
 # CALLING THEM
 tool
