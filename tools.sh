@@ -323,10 +323,10 @@ elif [ $choice == 'run-ip-tracer' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO IP-Tracer <==\n $WHITE"
   cd IP-Tracer
-  echo -e "$BOLDR \n==> BOOTED <==\n $WHITE"
-  bash ip-tracer
+  echo -e "$BOLDR \n==> RUNNING... <==\n $WHITE"
   oh()
   {
+  bash ip-tracer
   read -p "command(type 'exit' to leave)>> " com
   if [ $com == 'm' ]
   then
