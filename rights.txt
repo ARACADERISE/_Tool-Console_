@@ -1,0 +1,43 @@
+PROJECT RIGHTS/INFO
+
+What is _Tool-Console_?
+Tool-Console is a 3rd party termux application that uses Python3 to create a ui, along with a backend that stores user info of which
+users input, to display within the terminal. Not only does it use Python3, but it also uses json to format it into a brief and easy
+understanding of what the database, which is just all the files compiled into another files storing data of which is recieved within
+each file, holds. Along with this, Tool-Console comes with shell script(.sh) that you can use in terminal that allows you to install the tools.
+NOTE: I highly require you to bash install.sh to install all compatible tools/packages that the project uses!
+
+What right do I have to store your data?
+Well, counting on the fact that this database has no database until you enter information, and for the fact that you can very easily
+lie about the information you put in, my rights of holding your info is in the place of "Improvements To Enviormental Changes", or simply
+I am storing your information for a good that will most likely help further advance the project in ways we can't right now!
+
+Why write a .py version if we can just run bash tools.sh and install the tools?
+Well..truth be told..the .py is just a much funner way to explore these tools..I mean who doesn't like to run python to explore a world
+full of hacker tools! I know that .py seems lame compared to the .sh file of which lets you download, but as we aquire into the project and its
+updates the .py will hopefully get more and more attention.
+Please be aware we did not include the .sh file named tools.sh to over-ride the file.py, we simply made it to where you can run the file.py,
+see the projects information, what it does, then continue on with your day, that or even then transition over to tools.sh to install
+what you went into the file.py to look for!
+
+Possible Updates for _Tool-Console_(not the .sh files)?
+-----------------
+-Updates in the future, we are hoping, are going to be as follows:
+1.Different types of in-project platforms that change the way/feel of the project.
+2.Packages that help make the project more and more fluent, and possibly even "Mode Packages" that put the project into a different mode.
+3.Yes, Compatible UI Tool-Console platforms as well!
+4.User compatability to interact, stop, or even sync data from database into a new file of there choosing.(This may take a while since I am not expert at Python)
+5.This one may or may not come: Project Color Setup
+and 6.Well..lets just say after all of that the project will be at its best, so we'll be leaving it there except for coming back to tweak it.
+But why did I put 6 there? Well..we are hoping on making a new project where you input a link, and then you can pull any data/info from within the site.
+Why is that #6? We are hoping to contribute it within Tool-Console! What's better than a project running in a project!
+
+--
+Overall, I created this Project not to just get data about the users, not to just test what I know, not to push my coding limits to there very best,
+but to make sure to satisfy users in a stress-relief zone. No scrolling, going to google, looking up what a tool does, finding out it is the wrong tool,
+returning back, doing the same thing over and over. NO! You use Tool-Console for a fast, easy-access, easy-download tool to get you on your way.
+
+Copyrigh 2019, ARACADE_RISE, Tool-Console
+All Rights Reserved,
+At no point is it alright to edit the script source and claim it as your own work, even at fault of deleting all code and creating your
+own version of it.
