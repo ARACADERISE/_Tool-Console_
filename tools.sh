@@ -28,7 +28,7 @@ tool()
 # echo -e "$BLUE \n-->TOOLS<--\n "
 echo -e "$BOLDR \n==> C H O O S E - O N E - O F - T H E - F O L L O W I N G - T O O L S <==\n"
 echo -e "$BLUE\n1.Sniper\n2.JohnTheRipper\n3.Hydra\n4.Metasploit\n5.sploitego\n6.Hunner\n7.sqlmap\n8.shellphish\n9.userrecon\n10.BlackEye
-\n11.InstaShell\n12.SayCheese\n13.ClipBoardMe\n14.D-tect\n15.Nmap\n16.RED_HAWK\n17.Crips\n18.OSIF\n$WHITE"
+\n11.InstaShell\n12.SayCheese\n13.ClipBoardMe\n14.D-tect\n15.Nmap\n16.RED_HAWK\n17.Crips\n18.OSIF\n19.Leave\n$WHITE"
 read -p "Your Choice >> " choice 
 }
 
@@ -148,9 +148,9 @@ then
   echo -e "$BOLDR \n==>NOW INSTALLING OSIF<==\n $WHITE"
   git clone https://github.com/ciku370/OSIF
   echo -e "$BOLDR \n--> I  N  S  T  A  L  L  E  D<--\n $WHITE"
-elif [ $choice == 21 ]
+elif [ $choice == 19 ]
 then
-  echo -e "$BOLDR \n==> Hope you enjoyed. Hey while you're at it, type in python file.py and checkout the actual project! <==\n"
+  echo -e "$BOLDR \n==> Hope you enjoyed. Hey while you're at it, type in python file.py and checkout the actual project! <==\n $WHITE"
 else
   echo -e "$BOLDR \n==> ALREADY INSTALLED<==\n $WHITE"
 fi
