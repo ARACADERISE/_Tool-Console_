@@ -191,7 +191,7 @@ then
   echo -e "$BOLDR \n==> BOOTING UP SNIPER <==\n $WHITE"
   cd Sn1per
   bash install.sh
-  sniper
+  bash sniper --help
   title
   info
   tool
