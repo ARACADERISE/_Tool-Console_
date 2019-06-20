@@ -67,7 +67,9 @@ elif [ $choice == 4 ]
 then
   echo -e "$RED \n==> INSTALLING METASPLOIT <==\n $WHITE"
   pkg update && pkg upgrade -y && pkg install wget curl openssh git -y
+  pkg pkg install unstable-repo
   wget Auxilus.github.io/metasploit.sh
+  pkg install metasploit
   echo -e "$BOLDR \n==> I  N  S  T  A  L  L  E  D <==\n $WHITE"
   tool
   install
@@ -201,10 +203,10 @@ then
   echo -e "$BOLDR \n==> Independent Terminal App that requires arguments, or a user format, to run. Sorry <==\n $WHITE"
   tool
   install
-elif [ $choice == 'run-Metasploit' ]
+elif [ $choice == 'run-metasploit' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO METASPLOIT <==\n $WHITE"
-  
+  bash metasploit.sh
 else
   echo -e "$BOLDR \n==> Hmm.. oops seems like we couldn't execute..please re-type bash tools.sh or go to python file.py!<==\n $WHITE"
 fi
