@@ -61,6 +61,7 @@ echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 # echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
 echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
 read -p ">> " ro
+fi
 if [ $ro == 1 ]
 then
   echo -e "$RED \n==> BOOTING PROJECT <==\n $WHITE"
