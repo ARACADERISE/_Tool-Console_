@@ -93,7 +93,7 @@ then
 elif [ $ro == 2 ]
 then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
-  cd && cd _Tool-Console
+  cd && cd _Tool-Console_
   bash tools.sh
 fi
 }
