@@ -59,9 +59,15 @@ own version of it<==\n $WHITE"
 
 echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 # echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
+echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
+echo -e "E   N   J   O   Y!"
+else
+echo -e "$RED \n==> ERROR <==\n"
+fi
+
 echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
 read -p ">> " ro
-fi
+
 if [ $ro == 1 ]
 then
   echo -e "$RED \n==> BOOTING PROJECT <==\n $WHITE"
@@ -70,10 +76,4 @@ elif [ $ro == 2 ]
 then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
   bash tools.sh
-fi
-echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
-echo -e "E   N   J   O   Y!"
-
-else
-echo -e "$RED \n==> ERROR <==\n"
 fi
