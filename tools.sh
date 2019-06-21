@@ -23,8 +23,8 @@ echo -e "$GREEN
 title
 
 
-command -v ubuntu -v kali > /dev/null 2>&1 || { echo >&2 "$BOLDR \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
-command -v kali > /dev/null 2>&1 || { echo >&2 "$BOLDR \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
+command -v ubuntu -v kali > /dev/null 2>&1 || { echo >&2 -e "$BOLDR \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
+command -v kali > /dev/null 2>&1 || { echo >&2 -e "$BOLDR \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
 
 info()
 {
