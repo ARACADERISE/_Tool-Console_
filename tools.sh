@@ -5,7 +5,6 @@ alert()
 command -v Ubuntu > /dev/null 2>&1 || { echo >&2 -e " \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
 command -v Lali > /dev/null 2>&1 || { echo >&2 -e " \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
 }
-alert
 
 GREEN="\033[92m"
 RED="\033[91m"
@@ -27,7 +26,6 @@ echo -e "$GREEN
                  MADE_BY: ARACADE_RISE,
                    "
 }
-title
 
 info()
 {
@@ -36,7 +34,6 @@ echo -e "$BOLDR \n==> After the tool downloads you can then type run-nameoftoolh
 open-project to run the python side of things! (NOTE: It is not case sensetive meaning the file name can be in all lowercase even if
 it has uppercase letters in it)<==\n"
 }
-info
 
 tool()
 {
@@ -413,5 +410,8 @@ fi
 }
 
 # CALLING THEM
+title
+alert
+info
 tool
 install
