@@ -41,6 +41,7 @@ apt update && apt updgrade
 pkg install python
 
 ehco -e "$GREEN \n==>INSTALLING PROJECT DETAILS<==\n $WHITE"
+cd /
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/tools.sh
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
@@ -88,6 +89,8 @@ if [ $ro == 1 ]
 then
   echo -e "$RED \n==> BOOTING PROJECT <==\n $WHITE"
   python file.py
+  echo -e "$RED \n==> Redirecting you to bash.sh to install the tools! <==\n $WHITE"
+  bash tools.sh
 elif [ $ro == 2 ]
 then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
