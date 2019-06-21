@@ -59,7 +59,7 @@ own version of it<==\n $WHITE"
 
 echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 # echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
-echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. bash tools.sh 2. python file.py <== $WHITE"
+echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
 read -p ">> " ro
 if [ $ro == 1 ]
 then
