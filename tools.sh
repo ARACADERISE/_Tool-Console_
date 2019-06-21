@@ -2,8 +2,8 @@ clear
 
 alert()
 {
-command -v ubuntu > /dev/null 2>&1 || { echo >&2  " \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
-command -v kali > /dev/null 2>&1 || { echo >&2  " \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
+command -v ubuntu > /dev/null 2>&1 || { echo >&2 -e " \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
+command -v kali > /dev/null 2>&1 || { echo >&2 -e " \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
 }
 alert
 
