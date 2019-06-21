@@ -3,7 +3,6 @@ GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
-RIGHTS=rights.txt
 
 echo -e "$GREEN $RESET\n\n"
 
@@ -60,15 +59,20 @@ own version of it<==\n $WHITE"
 
 echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 # echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
-echo -e "$BLUE ==>You can type $RED bash tools.sh $BLUE to install the tools offered<== $WHITE"
+echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. bash tools.sh 2. python file.py <== $WHITE"
+read -p ">> " ro
+if [ $ro == 1 ]
+then
+  echo -e "$RED \n==> BOOTING PROJECT <==\n $WHITE"
+  python file.py
+elif [ $ro == 2 ]
+then
+  echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
+  bash tools.sh
+fi
 echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
 
-echo -e "\n===\n"
-cat $rights
-echo -e "\n===\n"
-
-python file.py
 else
 echo -e "$RED \n==> ERROR <==\n"
 fi
