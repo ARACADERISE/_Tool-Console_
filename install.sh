@@ -90,10 +90,10 @@ then
   echo -e "$RED \n==> BOOTING PROJECT <==\n $WHITE"
   python file.py
   echo -e "$RED \n==> Redirecting you to bash.sh to install the tools! <==\n $WHITE"
-  cd && cd _Tool-Console_ && bash tools.sh
 elif [ $ro == 2 ]
 then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
+  cd && cd _Tool-Console
   bash tools.sh
 fi
 }
