@@ -1,10 +1,6 @@
 clear
 
-alert()
-{
-command -v ubuntu 1>&2 || echo -e "ubuntu"; exit 1;
-}
-alert
+
 
 GREEN="\033[92m"
 RED="\033[91m"
