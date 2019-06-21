@@ -1,5 +1,8 @@
 clear
 
+command -v ubuntu > /dev/null 2>&1 || {echo >2& "I need Ubuntu, but it is not installed!"; exit 1 }
+command -v kali > /dev/null 2>&1 || {echo >2& "I need Kala, but it is not installed!"; exit 1 }
+
 GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
