@@ -416,3 +416,4 @@ fi
 # CALLING THEM
 tool
 install
+exit 1
