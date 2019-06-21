@@ -1,11 +1,5 @@
 clear
 
-alert()
-{
-command -v Ubuntu > /dev/null || { echo " \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
-command -v Kali > /dev/null || { echo >&2  " \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
-}
-
 GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
@@ -411,7 +405,6 @@ fi
 
 # CALLING THEM
 title
-alert
 info
 tool
 install
