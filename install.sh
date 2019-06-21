@@ -3,7 +3,7 @@ GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
-$RIGHTS=https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
+RIGHTS=https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
 
 echo -e "$GREEN $RESET\n\n"
 
