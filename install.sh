@@ -24,6 +24,11 @@ echo -e "$RED \n==>TYPE 'Y' TO INSTALL<=="
 #echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
 read -p "#> " ch
 
+route()
+{
+echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
+}
+
 if [ $ch == 'y' ]
 then
 echo -e "$RED \n==>SETTING UP<==\n $WHITE"
@@ -67,11 +72,6 @@ route
 else
 echo -e "$RED \n==> NOTE: You have chosen not to setup the project to its full length <==\n"
 fi
-
-route()
-{
-echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
-}
 
 read -p ">> " ro
 
