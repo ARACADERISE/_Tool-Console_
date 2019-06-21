@@ -74,7 +74,7 @@ echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
 else
-echo -e "$RED \n==> NOTE: You have chosen not to setup the project to its full length <==\n"
+echo -e "$RED \n==> Redirecting... <==\n"
 ask
 load
 fi
