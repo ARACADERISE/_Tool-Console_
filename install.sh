@@ -71,8 +71,9 @@ fi
 route()
 {
 echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
-read -p ">> " ro
 }
+
+read -p ">> " ro
 
 if [ $ro == 1 ]
 then
