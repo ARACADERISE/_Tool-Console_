@@ -3,7 +3,7 @@ GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
-RIGHTS=https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
+RIGHTS=rights.txt
 
 echo -e "$GREEN $RESET\n\n"
 
@@ -64,7 +64,7 @@ echo -e "$BLUE ==>You can type $RED bash tools.sh $BLUE to install the tools off
 echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
 
-echo -e"\n===\n >> $RIGHTS << \n===\n"
+echo -e "\n===\n >> $RIGHTS << \n===\n"
 
 python file.py
 else
