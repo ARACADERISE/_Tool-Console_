@@ -1,8 +1,5 @@
 clear
 
-command -v ubuntu > /dev/null 2>&1 || { echo >&2 "I require Ubuntu but it's not installed. Install it. Aborting."; exit 1; }
-command -v kali > /dev/null 2>&1 || { echo >&2 "I require Kali but it's not installed. Install it. Aborting."; exit 1; }
-
 GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
@@ -24,6 +21,11 @@ echo -e "$GREEN
                    "
 }
 title
+
+
+command -v ubuntu -v kali > /dev/null 2>&1 || { echo >&2 "$BOLDR \n==> I require Ubuntu but it's not installed. Install it <==\n"; exit 1; }
+command -v kali > /dev/null 2>&1 || { echo >&2 "$BOLDR \n==> I require Kali but it's not installed. Install it. <==\n"; exit 1; }
+
 info()
 {
 echo -e "$BOLDR \n==>NOTE: You can only download one at a time<==\n"     
