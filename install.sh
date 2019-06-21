@@ -63,12 +63,16 @@ echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 # echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
 echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
+route
 else
-echo -e "$RED \n==> ERROR <==\n"
+echo -e "$RED \n==> NOTE: You have chosen not to setup the project to its full length <==\n"
 fi
 
+route()
+{
 echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
 read -p ">> " ro
+}
 
 if [ $ro == 1 ]
 then
