@@ -92,3 +92,7 @@ then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
   bash tools.sh
 fi
+
+# CALLING THEM
+ask
+load
