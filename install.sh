@@ -21,8 +21,10 @@ echo -e "
  
 echo -e "$RED \n==>TYPE 'Y' TO INSTALL<=="
 #echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
-read -p "#> "
+read -p "#> " ch
 
+if [ $ch == 'y' ]
+then
 echo -e "$RED \n==>SETTING UP<==\n $WHITE"
 apt update && apt updgrade
 pkg install python
@@ -65,3 +67,6 @@ echo -e "E   N   J   O   Y!"
 echo -e"\n===\n$RIGHTS\n===\n"
 
 python file.py
+else
+echo -e "$RED \n==> ERROR <==\n"
+fi
