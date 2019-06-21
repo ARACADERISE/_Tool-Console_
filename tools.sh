@@ -1,5 +1,10 @@
 clear
 
+
+command -v ubuntu > /dev/null 2>&1 || { echo >&2  " \n==> I require Ubuntu but it's not installed. Install it <==\n" }
+command -v kali > /dev/null 2>&1 || { echo >&2  " \n==> I require Kali but it's not installed. Install it. <==\n" }
+
+
 GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
@@ -21,9 +26,6 @@ echo -e "$GREEN
                    "
 }
 title
-
-command -v ubuntu > /dev/null 2>&1 || { echo >&2 $BOLDR " \n==> I require Ubuntu but it's not installed. Install it <==\n" }
-command -v kali > /dev/null 2>&1 || { echo >&2 $BOLDR " \n==> I require Kali but it's not installed. Install it. <==\n" }
 
 info()
 {
