@@ -247,7 +247,7 @@ then
 elif [ $choice == 'run-hunner' ]
 then
   echo -e "$BOLDR \n==> BOOTING INTO Hunner <==\n $WHITE"
-  cd hunner
+  cd Hunner
   python hunner.py
   title
   info
