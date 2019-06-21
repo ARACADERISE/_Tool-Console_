@@ -73,7 +73,6 @@ echo -e "$RED \n ==>INSTALLED SUCESSFULLY<== $WHITE"
 # echo -e "$BLUE ==>To run, type python file.py<== $WHITE"
 echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat rights.txt$BLUE<==\n $WHITE"
 echo -e "E   N   J   O   Y!"
-route
 else
 echo -e "$RED \n==> NOTE: You have chosen not to setup the project to its full length <==\n"
 ask
@@ -81,6 +80,8 @@ load
 fi
 }
 
+after()
+{
 read -p ">> " ro
 
 if [ $ro == 1 ]
@@ -92,7 +93,10 @@ then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
   bash tools.sh
 fi
+}
 
 # CALLING THEM
 ask
 load
+route
+after
