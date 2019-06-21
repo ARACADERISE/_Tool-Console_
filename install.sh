@@ -41,7 +41,6 @@ apt update && apt updgrade
 pkg install python
 
 ehco -e "$GREEN \n==>INSTALLING PROJECT DETAILS<==\n $WHITE"
-cd ~
 git clone https://github.com/ARACADERISE/_Tool-Console_.git
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/tools.sh
 https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
@@ -49,7 +48,6 @@ https://github.com/termux/termux-packages
 apt install git
 
 echo -e "$RED \n==>INSTALLING UBUNTU<==\n $WHITE"
-cd ~ 
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
 apt-get install proot -y
@@ -59,7 +57,6 @@ echo -e "$BLUE \n==>If you want to use Ubuntu: \n1.cd ubuntu-in-termux\n2.chmod 
 ./start.sh\n<==\n"
 
 echo -e "$RED \n==>INSTALLING KALI<==\n $WHITE"
-cd ~
 pkg install wget
 wget https://raw.githubusercontent.com/Hax4us/Nethunter-In-Termux/master/kalinethunter
 echo -e "$BLUE To run: \n
@@ -67,7 +64,6 @@ echo -e "$BLUE To run: \n
 2.bash kalinethunter"
 
 echo -e "$RED \n==>INSTALLING PHP<==\n $WHITE"
-cd ~
 apt install php
 
 echo -e "$RED \n==>At no point is it alright to edit the script source and claim it as your own work, even at fault of deleting all code and creating your
