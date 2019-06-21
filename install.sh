@@ -65,7 +65,7 @@ echo -e "$BLUE ==>Want to read Tool-Consoles rights document? Type $RED cat righ
 echo -e "E   N   J   O   Y!"
 
 echo -e "\n===\n"
-$rights
+cat $rights
 echo -e "\n===\n"
 
 python file.py
