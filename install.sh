@@ -28,6 +28,7 @@ bootDown()
   then
     echo -e "$BOLDY > SAFE_MODE_ON turns on by default everytime user exits project. CASE SENSETIVE!"
     echo -e "$BOLDY > Type Turn_Off to return back to normal terminal! OR Turn_Off&&tools.sh"
+    echo -e "$BOLDY > Type Turn_Off&&python.file.py to run the main project"
     echo -e "$BOLDY > Type 'cat' to load file information"
     echo -e "$BOLDY > Type see_d_f to see list of files!"
     echo -e "$BOLDY > clear to clear terminal"
@@ -56,6 +57,11 @@ bootDown()
     echo -e exit "status" 1
     cd && cd _Tool-Console_
     bash tools.sh
+  elif [ $shell == 'Turn_Off&&python.file.py' ]
+  then
+    echo -e "SAFE_MODE_ON# python file.py"
+    cd && cd _Tool-Console_
+    python file.py
   elif [ $shell == 'clear' ]
   then
     clear
