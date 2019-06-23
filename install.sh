@@ -19,15 +19,14 @@ echo -e "
                    THANK YOU for running this part of the project, not only will this help you install Ubuntu/Kali but it also sets
                    up the project itself again!
 "
- 
-ask()
 
 bootDown()
 {
   echo -e "$BOLDY $"
   boootDown
 }
-
+ 
+ask()
 {
 echo -e "$RED \n==>TYPE 'Y' TO INSTALL<=="
 #echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
