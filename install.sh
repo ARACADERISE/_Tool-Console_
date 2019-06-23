@@ -53,15 +53,13 @@ bootDown()
     echo -e "SAVE_MODE_ON# term.exit.withStatus(1)"
     echo -e "Exited with" exit "status" 1 "$WHITE"
     clear 
-    echo -e "$WHITE \n==> HERE IS YOUR DIRECTORY <==\n"
-    cd 
-    ls
-    cd
     echo -e "type format.into.terminal(termux) to go back"
     read -p "mode_formatted# " mode
     if [ $mode == 'format.into.terminal(termux)' ]
     then
-      cd $HOME
+      echo -e "$WHITE \n==> HERE IS YOUR DIRECTORY <==\n"
+      cd _Tool-Console_
+      ls
     else
       echo -e "going back.."; echo -e "SAFE_MODE_ON# terminal.return()"
       bootDown
