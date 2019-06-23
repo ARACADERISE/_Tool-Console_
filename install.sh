@@ -54,12 +54,13 @@ bootDown()
   elif [ $shell == 'Turn_Off&&tools.sh' ]
   then
     echo -e "SAFE_MODE_ON# bash tools.sh"
-    echo -e exit "status" 1
+    # echo -e exit "status" 1
     cd && cd _Tool-Console_
     bash tools.sh
   elif [ $shell == 'Turn_Off&&python.file.py' ]
   then
     echo -e "SAFE_MODE_ON# python file.py $WHITE"
+    # echo -e exit "status" 1
     cd && cd _Tool-Console_
     python file.py
   elif [ $shell == 'clear' ]
