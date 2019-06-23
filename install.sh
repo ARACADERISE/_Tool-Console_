@@ -27,6 +27,9 @@ bootDown()
   then
     echo -e "$BOLDY > Type Turn_Off to return back to normal terminal!\n"
     bootDown
+  elif [ $shell == 'Turn_Off' ]
+  then
+    echo -e exit 1;
   else
     bootDown
   fi
