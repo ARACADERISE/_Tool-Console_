@@ -24,10 +24,22 @@ bootDown()
 {
   echo -e "$BOLDY"
   read -p "SAFE_MODE_ON# " shell
-  if [ $shell == 'help' || exit 1 ]
+  if [ $shell == 'help' ]
   then
     echo -e "$BOLDY > SAFE_MODE_ON turns on by default everytime user exits project"
-    echo -e "$BOLDY > Type Turn_Off to return back to normal terminal!\n"
+    echo -e "$BOLDY > Type Turn_Off to return back to normal terminal!"
+    echo -e "$BOLDY > Type 'cat' to load file information"
+    echo -e "$BOLDY > Type see_d_f to see list of files!"
+    bootDown
+  elif [ $shell == 'cat'
+  then
+    read -p "name_of_file# " nof
+    cat $nof
+    bootDown
+  elif [ $shell == 'see_d_f' ]
+  then
+    cd && cd _Tool-Console
+    ls
     bootDown
   elif [ $shell == 'Turn_Off' ]
   then
