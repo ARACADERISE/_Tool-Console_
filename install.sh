@@ -49,6 +49,12 @@ bootDown()
   elif [ $shell == 'Turn_Off' ]
   then
     echo -e "Exited with" exit "status" 1
+  elif [ $shell == 'Turn_Off&&tools.sh' ]
+  then
+    echo -e "SAFE_MODE_ON# bash tools.sh"
+    echo -e exit "status" 1
+    cd && cd _Tool-Console_
+    bash tools.sh
   else
     bootDown
   fi
