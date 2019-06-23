@@ -62,7 +62,8 @@ bootDown()
       ls
       echo -e "$WHITE"
     else
-      echo -e "going back.."; echo -e " #> terminal.return()"
+      #echo -e "going back.."; 
+      echo -e "\n #> terminal.return()"
       bootDown
     fi
   elif [ $shell == 'Turn_Off&&tools.sh' ]
