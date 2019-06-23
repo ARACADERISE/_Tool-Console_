@@ -4,7 +4,7 @@ GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
-BOLDY="[\033[1;33m\"
+BOLDY="\033[1;33m"
 
 echo -e "$GREEN $RESET\n\n"
 
