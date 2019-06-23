@@ -52,7 +52,8 @@ bootDown()
   then
     echo -e "SAVE_MODE_ON# term.exit.withStatus(1)"
     echo -e "Exited with" exit "status" 1 "$WHITE"
-    $clear && cd ~ && ls
+    clear 
+    cd ~ && ls
   elif [ $shell == 'Turn_Off&&tools.sh' ]
   then
     echo -e "SAFE_MODE_ON# bash tools.sh"
