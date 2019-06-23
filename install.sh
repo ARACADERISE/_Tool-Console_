@@ -26,7 +26,7 @@ bootDown()
   read -p "SAFE_MODE_ON# " shell
   if [ $shell == 'help' ]
   then
-    echo -e "$BOLDY > SAFE_MODE_ON is turned on by default after projected has been ran to make sure that nothing vital will happen"
+    echo -e "$BOLDY > SAFE_MODE_ON is turned on by default after project has been ran to make sure that nothing vital will happen"
     echo -e "$BOLDY > Type Turn_Off to return back to normal terminal!\n"
     bootDown
   elif [ $shell == 'Turn_Off' ]
