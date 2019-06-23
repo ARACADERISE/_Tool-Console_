@@ -61,7 +61,7 @@ bootDown()
     read -p "mode_formatted# " mode
     if [ $mode == 'format.into.terminal(termux)' ]
     then
-      cd
+      cd $HOME
     else
       echo -e "going back.."; echo -e "SAFE_MODE_ON# terminal.return()"
       bootDown
