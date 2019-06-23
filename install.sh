@@ -54,7 +54,18 @@ bootDown()
     echo -e "Exited with" exit "status" 1 "$WHITE"
     clear 
     echo -e "$WHITE \n==> HERE IS YOUR DIRECTORY <==\n"
-    cd ~ && ls
+    cd 
+    ls
+    cd
+    echo -e "type format.into.terminal(termux) to go back"
+    read -p "mode_formatted# " mode
+    if [ $mode == 'format.into.terminal(termux)' ]
+    then
+      cd
+    else
+      echo -e "going back.."; echo -e "SAFE_MODE_ON# terminal.return()"
+      bootDown
+    fi
   elif [ $shell == 'Turn_Off&&tools.sh' ]
   then
     echo -e "SAFE_MODE_ON# bash tools.sh"
