@@ -27,6 +27,9 @@ bootDown()
   then
     echo -e "$BOLDY > Type Turn_Off to return back to normal terminal!\n"
     bootDown
+  else
+    bootDown
+  fi
   bootDown
 }
  
