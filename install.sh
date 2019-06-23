@@ -5,6 +5,11 @@ RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
 
+if [ boot ]
+then
+  echo -e "OK"
+fi
+
 echo -e "$GREEN $RESET\n\n"
 
 echo -e "
