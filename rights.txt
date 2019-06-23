@@ -32,6 +32,10 @@ and 6.Well..lets just say after all of that the project will be at its best, so 
 But why did I put 6 there? Well..we are hoping on making a new project where you input a link, and then you can pull any data/info from within the site.
 Why is that #6? We are hoping to contribute it within Tool-Console! What's better than a project running in a project!
 
+Overall Rights
+Rights of the project holding your data has no user-acception. Another words.. I do not ask a user to allow the db to hold there information for the same reason explained above in "What right do I have to store your data". But wouldn't it give your information away? Well..not exactly. The database is not virtual, or another words it is not stable upon storing the same data within every other terminal using the project. Not that it will ever come to that. Here, I will explain it better: The database is not set to store EVERYTHING. It is more like a you-database. The database is just for you, while the big dbs are for everyone and everyones information is stored into one db this database is just you. So why do I store it if I can't even see it? Someday I plan on making a .py file that syncs all data stored within each terminal running the project. I haven't quite figured it out, and don't worry once I do. I WILL NOT sell, use or steal your information, I will use it for a good that will help advance the project and the way users like it/want it. If you think I cannot give a self-given right to store your data in a you-database then please contact me at:
+t.targetyt@gmail.com
+
 --
 Overall, I created this Project not to just get data about the users, not to just test what I know, not to push my coding limits to there very best,
 but to make sure to satisfy users in a stress-relief zone. No scrolling, going to google, looking up what a tool does, finding out it is the wrong tool,
