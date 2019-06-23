@@ -34,6 +34,7 @@ bootDown()
   elif [ $shell == 'cat' ]
   then
     read -p "name_of_file# " nof
+    echo "$WHITE"
     cat $nof
     bootDown
   elif [ $shell == 'see_d_f' ]
