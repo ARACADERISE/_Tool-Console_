@@ -53,6 +53,7 @@ bootDown()
     echo -e "SAVE_MODE_ON# term.exit.withStatus(1)"
     echo -e "Exited with" exit "status" 1 "$WHITE"
     clear 
+    echo -e "$WHITE \n==> HERE IS YOUR DIRECTORY <==\n"
     cd ~ && ls
   elif [ $shell == 'Turn_Off&&tools.sh' ]
   then
