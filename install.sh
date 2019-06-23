@@ -38,7 +38,7 @@ bootDown()
     then
       bootDown
     fi
-    echo "$WHITE"
+    echo -e "$WHITE"
     cat $nof
     bootDown
   elif [ $shell == 'see_d_f' ]
