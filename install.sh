@@ -22,10 +22,10 @@ echo -e "
  
 ask()
 
-boot_down()
+bootDown()
 {
   echo -e "$BOLDY $"
-  booot_down
+  boootDown
 }
 
 {
@@ -103,7 +103,7 @@ then
   bash tools.sh
 elif [ $ro == 3 ]
 then
-  boot_down
+  bootDown
 fi
 }
 
