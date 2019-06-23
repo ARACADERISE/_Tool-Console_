@@ -61,7 +61,7 @@ bootDown()
       cd _Tool-Console_
       ls
     else
-      echo -e "going back.."; echo -e "SAFE_MODE_ON# terminal.return()"
+      echo -e "going back.."; echo -e $"terminal.return()"
       bootDown
     fi
   elif [ $shell == 'Turn_Off&&tools.sh' ]
