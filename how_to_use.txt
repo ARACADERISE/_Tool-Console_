@@ -1,11 +1,17 @@
 _____HOW TO USE_____
 
--------
-Step 1: Choose one of the choices given to you
-Step 2: The choice of which you choose will give you modules
-Step 3: Choose one of the modules given to you
-Step 4: Copy the link given to you, go through the steps on installation, and happy hacking!
--------
+It depends on how you want to use it really. There is a .py version that has mutliple different parts to it, it also gives you
+the creators name, how to install and so on so forth. Not only that but the python version will have more updates. The other way
+you can use this amazing terminal application is by bash install.sh to get the F U L L  E X T E N T of the project, you get to
+download the tools, run them in-project, and get a feel! How to run? No worries follow the steps below:
+
+First, you need to bash install.sh, then you'll be brought to 3 options: 1. run file.py 2. bash tools.sh and 3. exit. If you type
+'1'(exclude the single-quotes) then the program will then execute the .py version of the project. If you type '2' then the program
+will boot the tools.sh where you can download the tools. Or if you type '3' you will exit.
+
+Be aware that there is a SAFE_MODE_ONE# mini-terminal that turns on at the end. It has some functionalities to it in case you might 
+be interested. Just type 'help' to see the small list of commands you have within the SAFE_MODE_ON# mini-terminal or type Turn_Off
+to exit!
 
 NOTE:
 _Tool-Console_ is at no fault of copyrighting others work(s), it is 
