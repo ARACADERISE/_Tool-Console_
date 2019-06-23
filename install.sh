@@ -31,14 +31,14 @@ bootDown()
     echo -e "$BOLDY > Type 'cat' to load file information"
     echo -e "$BOLDY > Type see_d_f to see list of files!"
     bootDown
-  elif [ $shell == 'cat'
+  elif [ $shell == 'cat' ]
   then
     read -p "name_of_file# " nof
     cat $nof
     bootDown
   elif [ $shell == 'see_d_f' ]
   then
-    cd && cd _Tool-Console
+    cd && cd _Tool-Console_
     ls
     bootDown
   elif [ $shell == 'Turn_Off' ]
