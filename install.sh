@@ -44,7 +44,7 @@ bootDown()
     bootDown
   elif [ $shell == 'Turn_Off' ]
   then
-    echo -e "Exited with" exit 1
+    echo -e "Exited with" exit " status " 1
   else
     bootDown
   fi
