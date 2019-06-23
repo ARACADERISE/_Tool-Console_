@@ -57,9 +57,10 @@ bootDown()
     read -p "mode_formatted# " mode
     if [ $mode == 'format.into.terminal(termux)' ]
     then
-      echo -e "$WHITE \n==> HERE IS YOUR DIRECTORY <==\n"
+      echo -e "$WHITE \n==> HERE IS YOUR DIRECTORY <==\n $BOLDY"
       cd _Tool-Console_
       ls
+      echo -e "$WHITE"
     else
       echo -e "going back.."; echo -e $"terminal.return()"
       bootDown
