@@ -22,8 +22,12 @@ echo -e "
 
 bootDown()
 {
-  echo -e "$BOLDY $"
-  boootDown
+  read -p "$BOLDY SAFE_MODE_ON$ " shell
+  if [ $shell == 'help' ]
+  then
+    echo -e "$BOLDY > Type Turn_Off to return back to normal terminal!\n"
+    bootDown
+  bootDown
 }
  
 ask()
