@@ -4,6 +4,7 @@ GREEN="\033[92m"
 RED="\033[91m"
 BLUE="\033[94m"
 WHITE="\033[0;37m"
+BOLDY="[\033[1;33m\"
 
 echo -e "$GREEN $RESET\n\n"
 
@@ -20,6 +21,13 @@ echo -e "
 "
  
 ask()
+
+boot_down()
+{
+  echo -e "$BOLDY $"
+  booot_down
+}
+
 {
 echo -e "$RED \n==>TYPE 'Y' TO INSTALL<=="
 #echo -e "$RED \n==>OR, TYPE ctrl-c TO EXIT<==\n"
@@ -28,7 +36,7 @@ read -p "#> " ch
 
 route()
 {
-echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh <== $WHITE"
+echo -e "$BLUE ==> CHOOSE <==\n \n==> 1. python file.py 2. bash tools.sh 3. exit <== $WHITE"
 }
 
 load()
@@ -93,6 +101,10 @@ then
   echo -e "$RED \n==> BOOTING tools.sh <==\n $WHITE"
   cd && cd _Tool-Console_
   bash tools.sh
+elif [ $ro == 3 ]
+boot_down
+then
+  
 fi
 }
 
