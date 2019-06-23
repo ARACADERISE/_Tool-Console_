@@ -102,9 +102,8 @@ then
   cd && cd _Tool-Console_
   bash tools.sh
 elif [ $ro == 3 ]
-boot_down
 then
-  
+  boot_down
 fi
 }
 
