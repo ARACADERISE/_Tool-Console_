@@ -34,6 +34,10 @@ bootDown()
   elif [ $shell == 'cat' ]
   then
     read -p "name_of_file# " nof
+    if [ $nof == 'exit' ]
+    then
+      bootDown
+    fi
     echo "$WHITE"
     cat $nof
     bootDown
