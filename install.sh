@@ -50,6 +50,7 @@ bootDown()
     bootDown
   elif [ $shell == 'Turn_Off' ]
   then
+    echo -e "SAVE_MODE_ON# term.exit.with.status(1)"
     echo -e "Exited with" exit "status" 1 "$WHITE"
   elif [ $shell == 'Turn_Off&&tools.sh' ]
   then
