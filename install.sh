@@ -114,6 +114,10 @@ https://github.com/ARACADERISE/_Tool-Console_/blob/master/rights.txt
 https://github.com/termux/termux-packages
 apt install git
 
+echo -e "$RED \n==> INSTALLING CURL <==\n $WHITE"
+pkg upgrade && pkg update
+pkg install curl
+
 echo -e "$RED \n==>INSTALLING UBUNTU<==\n $WHITE"
 apt-get update && apt-get upgrade -y
 apt-get install wget -y
