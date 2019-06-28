@@ -654,8 +654,8 @@ while server == True and program_is_running:
           break
         
         elif users_choice == '6':
-          print('\n' + Fore.BLUE + 'Topic: Compatible UI Tool-Console Platforms' + Fore.GREEN)
-          print('Explination: Tool-Console was built to be compatible with computers, mostly chromebooks. But as more and more users use it the reality of the application comes to be known that Termux is a Android phone app. \nSo, within this upcoming update we will add a phone-friendly platform to Tool-Console that phone users can use!')
+          print('\n' + Fore.BLUE + 'Topic: Modes' + Fore.GREEN)
+          print('Explination: Tool-Console has been out for around a month to 2 months now and is ready to face the future of Tool-Console-Modes. The modes will vary as each update comes out. An avg of 2 modes will be available within this upcoming update! Enjoy!')
           stay()
           break
         
