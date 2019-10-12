@@ -5,7 +5,7 @@ TOOL_TYPE = {'type':'Termux'}
 AUTHOR = {'author':'ARACADE_RISE'}
 VERSION = {'version':'1.0.1'}
 START_DATE = {'start_date':'June 4th, 2019, 7pm'}
-RELEASE_DATE = {'release_data': None}
+RELEASE_DATE = {'release_data': 'July 11, 2019, 11pm'}
 
 def project_info():
   CONVERT = str({'info': [[GIT_LINK], [TOOL_TYPE], [AUTHOR], [VERSION], [START_DATE], [RELEASE_DATE]]})
